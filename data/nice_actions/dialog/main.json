@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.description",
+      "fallback": "Select An Action:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.main.title.external",
+    "fallback": "Actions"
+  },
+  "title": {
+    "translate": "menu.nice_actions.main.title",
+    "fallback": "Nice Actions"
+  },
+  "pause": true,
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.rtp",
+        "fallback": "Random Teleport"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.sit",
+        "fallback": "Sit Down"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions set 2"
+      }
+    }
+  ]
+}
