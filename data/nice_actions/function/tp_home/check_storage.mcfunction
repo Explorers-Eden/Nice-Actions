@@ -1,0 +1,3 @@
+$execute unless data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).nice_actions.home run return run tellraw @s "nope"
+$data modify storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).nice_actions.home.cost set from storage eden:settings nice_actions.tp_home_cost
+$function nice_actions:tp_home/teleport_player with storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).nice_actions.home

@@ -2,6 +2,11 @@
 	"values": 
 	[
 	"nice_actions:load",
-	"nice_actions:enable_trigger"
+	"nice_actions:trigger",
+	"nice_actions:timer/init",
+	"nice_actions:sit/run",
+	"nice_actions:calendar/init",
+	"nice_actions:time_hud/update/init",
+	"nice_actions:coords_hud/update/init"
 	]
 }

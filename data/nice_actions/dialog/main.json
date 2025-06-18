@@ -24,7 +24,7 @@
     "translate": "menu.nice_actions.main.title",
     "fallback": "Nice Actions"
   },
-  "pause": true,
+  "pause": false,
   "exit_action": {
     "label": {
       "translate": "mco.selectServer.close"
@@ -34,12 +34,86 @@
   "actions": [
     {
       "label": {
-        "translate": "option.nice_actions.rtp",
-        "fallback": "Random Teleport"
+        "translate": "option.nice_actions.coords_hud",
+        "fallback": "Coordinates Hud"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.coords_hud.tooltip",
+        "fallback": "Switch the HUD that displays your coords on or off."
       },
       "action": {
         "type": "run_command",
-        "command": "trigger nice_actions set 1"
+        "command": "trigger nice_actions.dialog_trigger set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.time_hud",
+        "fallback": "Time/Date Hud"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.time_hud.tooltip",
+        "fallback": "Toggle the bossbar that shows the current time/date."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 2"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.rtp",
+        "fallback": "Random Teleport"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.rtp.tooltip",
+        "fallback": "Go for a random hop within the world."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 3"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.tpspawn",
+        "fallback": "Teleport To Spawn"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.tpspawn.tooltip",
+        "fallback": "Head back to spawn."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 4"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.sethome",
+        "fallback": "Set Your Home"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.sethome.tooltip",
+        "fallback": "Save this as your new private home point. The old one’s gone."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 5"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.tphome",
+        "fallback": "Teleport To Your Home"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.tphome.tooltip",
+        "fallback": "Head back home instantly."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 6"
       }
     },
     {
@@ -47,9 +121,83 @@
         "translate": "option.nice_actions.sit",
         "fallback": "Sit Down"
       },
+      "tooltip": {
+        "translate": "option.nice_actions.sit.tooltip",
+        "fallback": "Grab a seat when you can. Left + right keys do the trick too."
+      },
       "action": {
         "type": "run_command",
-        "command": "trigger nice_actions set 2"
+        "command": "trigger nice_actions.dialog_trigger set 7"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.hat",
+        "fallback": "Equip As Hat"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.hat.tooltip",
+        "fallback": "Pop the item in your hand onto your head."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 8"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.sendcoords",
+        "fallback": "Send Coordinates"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.sendcoords.tooltip",
+        "fallback": "Broadcast your location in chat."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 9"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.deathcoords",
+        "fallback": "Show Death Coordinates"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.deathcoords.tooltip",
+        "fallback": "Get the coords of your last death."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 10"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.villagerdata",
+        "fallback": "Get Villager Info"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.villagerdata.tooltip",
+        "fallback": "Pull up details on the nearest Villager."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 11"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.horsedata",
+        "fallback": "Get Horse Info"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.horsedata.tooltip",
+        "fallback": "Pull up details on the nearest Horse."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 12"
       }
     }
   ]

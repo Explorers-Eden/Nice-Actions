@@ -1,0 +1,24 @@
+scoreboard objectives setdisplay list nice_actions.days_lived.counter
+
+data modify storage eden:settings nice_actions set value {\
+rtp_radius:2500,\
+rtp_height_min:90,\
+rtp_height_max:180,\
+spawn_x:0,\
+spawn_y:0,\
+spawn_z:0,\
+spawn_dimension:"minecraft:overworld",\
+rtp_cooldown:600,\
+tp_home_cooldown:180,\
+tp_spawn_cooldown:180,\
+rtp_cost:30,\
+sit_cost:0,\
+equip_hat_cost:0,\
+tp_spawn_cost:5,\
+send_coords_cost:0,\
+death_coords_cost:5,\
+set_home_cost:1,\
+tp_home_cost:3,\
+villager_info_cost:1,\
+horse_info_cost:1,\
+}

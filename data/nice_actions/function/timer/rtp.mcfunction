@@ -1,0 +1,2 @@
+execute as @s[scores={nice_actions.rtp.cooldown=1}] run scoreboard players add @s nice_actions.rtp.timer 1
+$execute as @s[scores={nice_actions.rtp.timer=$(rtp_cooldown)..}] run scoreboard players set @s nice_actions.rtp.cooldown 0

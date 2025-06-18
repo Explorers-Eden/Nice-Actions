@@ -1,0 +1,2 @@
+execute as @s[scores={nice_actions.tp_spawn.cooldown=1}] run scoreboard players add @s nice_actions.tp_spawn.timer 1
+$execute as @s[scores={nice_actions.tp_spawn.timer=$(tp_spawn_cooldown)..}] run scoreboard players set @s nice_actions.tp_spawn.cooldown 0

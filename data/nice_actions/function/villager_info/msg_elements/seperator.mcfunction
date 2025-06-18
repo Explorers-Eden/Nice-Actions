@@ -1,0 +1,1 @@
+tellraw @s {"text":"-----------------------------------------","color":"dark_gray","bold":true,"italic":false}

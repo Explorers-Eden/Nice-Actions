@@ -1,0 +1,2 @@
+execute if data entity @n[type=minecraft:villager] Brain.memories.minecraft:golem_detected_recently run tellraw @s [{"bold":false,"color":"white","italic":false,"text":"• Iron Golem Detected Recently: "},{"bold":false,"color":"green","italic":false,"text":"Yes"}]
+execute unless data entity @n[type=minecraft:villager] Brain.memories.minecraft:golem_detected_recently run tellraw @s [{"bold":false,"color":"white","italic":false,"text":"• Iron Golem Detected Recently: "},{"bold":false,"color":"red","italic":false,"text":"No"}]
