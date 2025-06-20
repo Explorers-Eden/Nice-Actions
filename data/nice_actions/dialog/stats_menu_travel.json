@@ -1,0 +1,160 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.select_statistic.description",
+      "fallback": "Select A Statistic To Share:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.stats_menu_main.title.external",
+    "fallback": "Statistic Categories"
+  },
+  "title": {
+    "translate": "menu.nice_actions.stats_menu_hostile.title",
+    "fallback": "Nice Actions: Blocks Traveled"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:stats_menu_main"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.boat",
+        "fallback": "By Boat"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 64"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.climb",
+        "fallback": "Climbed"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 65"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.crouch",
+        "fallback": "Crouched"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 66"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.fly",
+        "fallback": "Flown"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 67"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.happy_ghast",
+        "fallback": "By Happy Ghast"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 68"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.horse",
+        "fallback": "By Horse"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 69"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.minecart",
+        "fallback": "By Minecart"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 70"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.pig",
+        "fallback": "By Pig"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 71"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.sprint",
+        "fallback": "Sprinted"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 72"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.strider",
+        "fallback": "By Strider"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 73"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.swim",
+        "fallback": "Swum"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 74"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.travel.walk",
+        "fallback": "Walked"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 75"
+      }
+    }
+  ]
+}

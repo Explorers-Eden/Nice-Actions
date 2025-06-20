@@ -199,6 +199,34 @@
         "type": "run_command",
         "command": "trigger nice_actions.dialog_trigger set 12"
       }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.stats",
+        "fallback": "Share Stats"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.stats.tooltip",
+        "fallback": "Share your stats with players nearby (32 blocks)."
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:stats_menu_main"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.events",
+        "fallback": "Event Participation"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.events.tooltip",
+        "fallback": "Decide if you wanna take part in random events."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 13"
+      }
     }
   ]
 }

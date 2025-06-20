@@ -22,5 +22,5 @@ execute if predicate eden:weather/clear run data modify storage eden:temp huds.w
 execute if predicate eden:weather/rain run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#96D5FF","italic":false,"text":"🌧 "}
 execute if predicate eden:weather/thunder run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#FFF82E","italic":false,"text":"⚡ "}
 
-execute unless score $time_format eden.technical matches 1.. run function nice_actions:time_hud/update/display/12_update with storage eden:temp huds
-execute if score $time_format eden.technical matches 1.. run function nice_actions:time_hud/update/display/24_update with storage eden:temp huds
+execute if data storage eden:settings nice_actions{time_format:12} run function nice_actions:time_hud/update/display/12_update with storage eden:temp huds
+execute if data storage eden:settings nice_actions{time_format:24} run function nice_actions:time_hud/update/display/24_update with storage eden:temp huds

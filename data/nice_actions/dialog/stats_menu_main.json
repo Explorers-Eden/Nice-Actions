@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.select_category.description",
+      "fallback": "Select A Category:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.stats_menu_main.title.external",
+    "fallback": "Statistic Categories"
+  },
+  "title": {
+    "translate": "menu.nice_actions.stats_menu_main.title",
+    "fallback": "Nice Actions: Statistic Category"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:main"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.stats.kills",
+        "fallback": "Hostile Mob Kills"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:stats_menu_hostile"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.stats.mined",
+        "fallback": "Mined Blocks"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:stats_menu_mined"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.stats.distances",
+        "fallback": "Travelled Distances"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:stats_menu_travel"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.stats.misc",
+        "fallback": "Miscellaneous"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:stats_menu_misc"
+      }
+    }
+  ]
+}

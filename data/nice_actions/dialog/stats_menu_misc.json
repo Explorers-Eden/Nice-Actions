@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.select_statistic.description",
+      "fallback": "Select A Statistic To Share:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.stats_menu_main.title.external",
+    "fallback": "Statistic Categories"
+  },
+  "title": {
+    "translate": "menu.nice_actions.stats_menu_hostile.title",
+    "fallback": "Nice Actions: Miscellaneous"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:stats_menu_main"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.animals_bred",
+        "fallback": "Animals Bred"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 55"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.eat_cake_slice",
+        "fallback": "Cake Slices Eaten"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 56"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.enchant_item",
+        "fallback": "Items Enchanted"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 57"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.fish_caught",
+        "fallback": "Fish Caught"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 58"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.raid_trigger",
+        "fallback": "Triggered Raids"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 59"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.raid_win",
+        "fallback": "Raids Won"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 60"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.traded_with_villager",
+        "fallback": "Traded With Villagers"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 61"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.deaths",
+        "fallback": "Deaths"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 62"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.sleep_in_bed",
+        "fallback": "Slept In Bed"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 63"
+      }
+    }
+  ]
+}

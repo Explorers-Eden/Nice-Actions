@@ -1,0 +1,337 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.select_statistic.description",
+      "fallback": "Select A Statistic To Share:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.stats_menu_main.title.external",
+    "fallback": "Statistic Categories"
+  },
+  "title": {
+    "translate": "menu.nice_actions.stats_menu_hostile.title",
+    "fallback": "Nice Actions: Hostile Mob Kills"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:stats_menu_main"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "translate": "entity.minecraft.blaze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.bogged"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 2"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.breeze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 3"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.creeper"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 4"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.elder_guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 5"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.endermite"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 6"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ender_dragon"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 7"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.evoker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 8"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ghast"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 9"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 10"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.hoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 11"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.husk"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 12"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.illusioner"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 13"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.magma_cube"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 14"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.phantom"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 15"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.piglin_brute"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 16"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.pillager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 17"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ravager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 18"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.shulker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 19"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.silverfish"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 20"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 21"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.slime"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 22"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.stray"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 23"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vex"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 24"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vindicator"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 25"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.warden"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 26"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.witch"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 27"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 28"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither_skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 29"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 30"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 31"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie_villager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 32"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.creaking"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 33"
+      }
+    }
+  ]
+}

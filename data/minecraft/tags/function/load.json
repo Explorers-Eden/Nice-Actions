@@ -2,7 +2,8 @@
 	"values": 
 	[
 	"nice_actions:load",
-	"nice_actions:trigger",
+	"nice_actions:trigger/main",
+	"nice_actions:trigger/stats",
 	"nice_actions:timer/init",
 	"nice_actions:sit/run",
 	"nice_actions:calendar/init",

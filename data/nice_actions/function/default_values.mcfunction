@@ -1,7 +1,7 @@
-scoreboard objectives setdisplay list nice_actions.days_lived.counter
-
 data modify storage eden:settings nice_actions set value {\
-rtp_radius:2500,\
+time_format:12,\
+time_format_initial:"false",\
+rtp_radius:1500,\
 rtp_height_min:90,\
 rtp_height_max:180,\
 spawn_x:0,\
@@ -21,4 +21,5 @@ set_home_cost:1,\
 tp_home_cost:3,\
 villager_info_cost:1,\
 horse_info_cost:1,\
+share_stats_cost:1,\
 }

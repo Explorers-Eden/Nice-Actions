@@ -1,4 +1,4 @@
-schedule function nice_actions:trigger 10t
+schedule function nice_actions:trigger/main 10t
 
 scoreboard players enable @a nice_actions.dialog_trigger
 execute as @a store result score @s nice_actions.exp_level run experience query @s levels

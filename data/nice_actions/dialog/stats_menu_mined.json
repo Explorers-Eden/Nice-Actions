@@ -1,0 +1,229 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:writable_book",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.select_statistic.description",
+      "fallback": "Select A Statistic To Share:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.stats_menu_main.title.external",
+    "fallback": "Statistic Categories"
+  },
+  "title": {
+    "translate": "menu.nice_actions.stats_menu_hostile.title",
+    "fallback": "Nice Actions: Mined Blocks"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:stats_menu_main"
+    }
+  },
+  "columns": 3,
+  "actions": [
+    {
+      "label": {
+        "translate": "block.minecraft.obsidian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 34"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.crying_obsidian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 35"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.coal_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 36"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.iron_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 37"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.copper_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 38"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.lapis_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 39"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.emerald_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 40"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.diamond_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 41"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.gold_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 42"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.redstone_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 43"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_coal_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 44"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_iron_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 45"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_copper_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 46"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_lapis_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 47"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_emerald_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 48"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_diamond_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 49"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_gold_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 50"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.deepslate_redstone_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 51"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.ancient_debris"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 52"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.nether_gold_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 53"
+      }
+    },
+    {
+      "label": {
+        "translate": "block.minecraft.nether_quartz_ore"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 54"
+      }
+    }
+  ]
+}
