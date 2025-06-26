@@ -41,14 +41,14 @@ share_stats_cost:1,\
         fishing:{\
             loot_table:'eden:gameplay/events/fishing',\
             max_amount:96,\
-            chance:0.05,\
-            chance_initial:5,\
+            chance:0.1,\
+            chance_initial:10,\
         },\
         killing:{\
             loot_table:'eden:gameplay/events/killing',\
             max_amount:128,\
-            chance:0.05,\
-            chance_initial:5,\
+            chance:0.1,\
+            chance_initial:10,\
         },\
         breeding:{\
             loot_table:'eden:gameplay/events/breeding',\
