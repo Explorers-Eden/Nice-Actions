@@ -1,4 +1,4 @@
-data modify storage eden:settings nice_actions set value {\
+data modify storage eden:settings nice_actions merge value {\
 time_format:12,\
 time_format_initial:"false",\
 rtp_radius:1500,\
@@ -20,8 +20,6 @@ horse_info_cost:1,\
 share_stats_cost:1,\
     events:{\
         misc:{\
-            chance:0.2,\
-            chance_initial:20,\
             monday:"enabled",\
             monday_initial:"false",\
             tuesday:"enabled",\
@@ -43,32 +41,32 @@ share_stats_cost:1,\
         fishing:{\
             loot_table:'eden:gameplay/events/fishing',\
             max_amount:96,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.05,\
+            chance_initial:5,\
         },\
         killing:{\
             loot_table:'eden:gameplay/events/killing',\
             max_amount:128,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.05,\
+            chance_initial:5,\
         },\
         breeding:{\
             loot_table:'eden:gameplay/events/breeding',\
             max_amount:36,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.05,\
+            chance_initial:5,\
         },\
         brewing:{\
             loot_table:'eden:gameplay/events/brewing',\
             max_amount:96,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.05,\
+            chance_initial:5,\
         },\
         consuming:{\
             loot_table:'eden:gameplay/events/consuming',\
             max_amount:128,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.05,\
+            chance_initial:5,\
         }\
     }\
 }
