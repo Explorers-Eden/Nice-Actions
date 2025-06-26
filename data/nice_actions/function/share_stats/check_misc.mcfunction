@@ -9,3 +9,4 @@ execute as @s[scores={nice_actions.stats_trigger=60}] at @s run function nice_ac
 execute as @s[scores={nice_actions.stats_trigger=61}] at @s run function nice_actions:share_stats/misc/traded_with_villager with storage eden:settings nice_actions
 execute as @s[scores={nice_actions.stats_trigger=62}] at @s run function nice_actions:share_stats/misc/deaths with storage eden:settings nice_actions
 execute as @s[scores={nice_actions.stats_trigger=63}] at @s run function nice_actions:share_stats/misc/sleep_in_bed with storage eden:settings nice_actions
+execute as @s[scores={nice_actions.stats_trigger=64}] at @s run function nice_actions:share_stats/misc/days_wo_death with storage eden:settings nice_actions

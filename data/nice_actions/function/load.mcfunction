@@ -15,6 +15,8 @@ scoreboard objectives add nice_actions.sit dummy
 scoreboard objectives add nice_actions.has_died_today deathCount
 scoreboard objectives add nice_actions.hud.coords dummy
 scoreboard objectives add nice_actions.hud.time dummy
+scoreboard objectives add nice_actions.events.participate dummy
+scoreboard objectives add nice_actions.events.counter dummy
 
 ##calendar/time scoreboards
 scoreboard objectives add nice_actions.calendar dummy
@@ -33,7 +35,6 @@ execute unless score $day nice_actions.calendar matches 1.. run scoreboard playe
 execute unless score $month nice_actions.calendar matches 1.. run scoreboard players set $month nice_actions.calendar 1
 execute unless score $year nice_actions.calendar matches 1.. run scoreboard players set $year nice_actions.calendar 1
 execute unless data storage eden:calendar global.weekday run data modify storage eden:calendar global.weekday set value "Monday"
-scoreboard objectives add nice_actions.days_lived.counter dummy
 
 ##add default values
 execute unless data storage eden:settings nice_actions run function nice_actions:default_values
@@ -49,6 +50,7 @@ scoreboard objectives add nice_actions.stats.misc.raid_win minecraft.custom:mine
 scoreboard objectives add nice_actions.stats.misc.traded_with_villager minecraft.custom:minecraft.traded_with_villager
 scoreboard objectives add nice_actions.stats.misc.deaths minecraft.custom:minecraft.deaths
 scoreboard objectives add nice_actions.stats.misc.sleep_in_bed minecraft.custom:minecraft.sleep_in_bed
+scoreboard objectives add nice_actions.days_lived.counter dummy
 
 #traveling
 scoreboard objectives add nice_actions.stats.travel.boat minecraft.custom:minecraft.boat_one_cm

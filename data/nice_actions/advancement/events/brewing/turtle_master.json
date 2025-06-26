@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "brewed_potion": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": "minecraft:turtle_master"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brewed_potion"
+    ]
+  ],
+  "rewards": {
+    "function": "nice_actions:events/type/brewing/turtle_master"
+  }
+}

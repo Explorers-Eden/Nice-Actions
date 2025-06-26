@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "bred_mob": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:llama"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bred_mob"
+    ]
+  ],
+  "rewards": {
+    "function": "nice_actions:events/type/breeding/llama"
+  }
+}

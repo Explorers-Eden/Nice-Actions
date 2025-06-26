@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "killed_mob": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:axes"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_mob"
+    ]
+  ],
+  "rewards": {
+    "function": "nice_actions:events/type/killing/killed_w_axes"
+  }
+}

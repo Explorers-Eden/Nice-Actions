@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "hooked_fish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": "minecraft:pufferfish"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hooked_fish"
+    ]
+  ],
+  "rewards": {
+    "function": "nice_actions:events/type/fishing/caught_pufferfish"
+  }
+}

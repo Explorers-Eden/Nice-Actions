@@ -125,6 +125,16 @@
         "type": "minecraft:run_command",
         "command": "trigger nice_actions.stats_trigger set 63"
       }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.days_wo_death",
+        "fallback": "Days w/o Death"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nice_actions.stats_trigger set 64"
+      }
     }
   ]
 }

@@ -43,7 +43,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 64"
+        "command": "trigger nice_actions.stats_trigger set 65"
       }
     },
     {
@@ -53,7 +53,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 65"
+        "command": "trigger nice_actions.stats_trigger set 66"
       }
     },
     {
@@ -63,7 +63,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 66"
+        "command": "trigger nice_actions.stats_trigger set 67"
       }
     },
     {
@@ -73,7 +73,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 67"
+        "command": "trigger nice_actions.stats_trigger set 68"
       }
     },
     {
@@ -83,7 +83,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 68"
+        "command": "trigger nice_actions.stats_trigger set 69"
       }
     },
     {
@@ -93,7 +93,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 69"
+        "command": "trigger nice_actions.stats_trigger set 70"
       }
     },
     {
@@ -103,7 +103,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 70"
+        "command": "trigger nice_actions.stats_trigger set 71"
       }
     },
     {
@@ -113,7 +113,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 71"
+        "command": "trigger nice_actions.stats_trigger set 72"
       }
     },
     {
@@ -123,7 +123,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 72"
+        "command": "trigger nice_actions.stats_trigger set 73"
       }
     },
     {
@@ -133,7 +133,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 73"
+        "command": "trigger nice_actions.stats_trigger set 74"
       }
     },
     {
@@ -143,7 +143,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 74"
+        "command": "trigger nice_actions.stats_trigger set 75"
       }
     },
     {
@@ -153,7 +153,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger nice_actions.stats_trigger set 75"
+        "command": "trigger nice_actions.stats_trigger set 76"
       }
     }
   ]

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ],
+  "rewards": {
+    "function": "nice_actions:events/type/consuming/cookie"
+  }
+}

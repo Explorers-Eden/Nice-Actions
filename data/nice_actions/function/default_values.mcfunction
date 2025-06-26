@@ -4,10 +4,6 @@ time_format_initial:"false",\
 rtp_radius:1500,\
 rtp_height_min:90,\
 rtp_height_max:180,\
-spawn_x:0,\
-spawn_y:0,\
-spawn_z:0,\
-spawn_dimension:"minecraft:overworld",\
 rtp_cooldown:600,\
 tp_home_cooldown:180,\
 tp_spawn_cooldown:180,\
@@ -22,4 +18,57 @@ tp_home_cost:3,\
 villager_info_cost:1,\
 horse_info_cost:1,\
 share_stats_cost:1,\
+    events:{\
+        misc:{\
+            chance:0.2,\
+            chance_initial:20,\
+            monday:"enabled",\
+            monday_initial:"false",\
+            tuesday:"enabled",\
+            tuesday_initial:"false",\
+            wednesday:"enabled",\
+            wednesday_initial:"false",\
+            thursday:"enabled",\
+            thursday_initial:"false",\
+            friday:"enabled",\
+            friday_initial:"false",\
+            saturday:"disabled",\
+            saturday_initial:"true",\
+            sunday:"disabled",\
+            sunday_initial:"true",\
+            event_msg:"title",\
+            event_msg_actionbar_initial:"false",\
+            event_msg_chat_initial:"false",\
+        },\
+        fishing:{\
+            loot_table:'eden:gameplay/events/fishing',\
+            max_amount:96,\
+            chance:0.1,\
+            chance_initial:10,\
+        },\
+        killing:{\
+            loot_table:'eden:gameplay/events/killing',\
+            max_amount:128,\
+            chance:0.1,\
+            chance_initial:10,\
+        },\
+        breeding:{\
+            loot_table:'eden:gameplay/events/breeding',\
+            max_amount:36,\
+            chance:0.1,\
+            chance_initial:10,\
+        },\
+        brewing:{\
+            loot_table:'eden:gameplay/events/brewing',\
+            max_amount:96,\
+            chance:0.1,\
+            chance_initial:10,\
+        },\
+        consuming:{\
+            loot_table:'eden:gameplay/events/consuming',\
+            max_amount:128,\
+            chance:0.1,\
+            chance_initial:10,\
+        }\
+    }\
 }

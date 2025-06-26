@@ -8,4 +8,4 @@ scoreboard players reset * nice_actions.has_died_today
 scoreboard players reset $sleep_triggered eden.technical
 scoreboard players reset $sleep_msg_scheduled eden.technical
 
-scoreboard objectives setdisplay list nice_actions.days_lived.counter
+function nice_actions:events/start/init

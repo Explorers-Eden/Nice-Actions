@@ -1,0 +1,419 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:breeze_rod",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_strength_potion",
+                  "fallback": "Ominous Strength Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:strength",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_strength_potion.lore",
+                    "fallback": "Strength X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_speed_potion",
+                  "fallback": "Ominous Speed Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_speed_potion.lore",
+                    "fallback": "Speed X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_regeneration_potion",
+                  "fallback": "Ominous Regeneration Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:regeneration",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_regeneration_potion.lore",
+                    "fallback": "Regeneration X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_jump_boost_potion",
+                  "fallback": "Ominous Jump Boost Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:jump_boost",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_jump_boost_potion.lore",
+                    "fallback": "Jump Boost X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_luck_potion",
+                  "fallback": "Ominous Luck Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:jump_boost",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_luck_potion.lore",
+                    "fallback": "Luck X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:ominous_bottle",
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "items.nice_actions.ominous_saturation_potion",
+                  "fallback": "Ominous Saturation Potion"
+                },
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.wandering_trader.drink_potion",
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:jump_boost",
+                          "amplifier": 10,
+                          "duration": 12000,
+                          "ambient": false,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "items.nice_actions.ominous_saturation_potion.lore",
+                    "fallback": "Saturation X (10:00)",
+                    "color": "white",
+                    "bold": false,
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 24
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:turtle_helmet",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 25
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 24
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 24
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 24
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}
