@@ -47,26 +47,26 @@ share_stats_cost:1,\
         killing:{\
             loot_table:'eden:gameplay/events/killing',\
             max_amount:128,\
-            chance:0.1,\
-            chance_initial:10,\
+            chance:0.09,\
+            chance_initial:9,\
         },\
         breeding:{\
             loot_table:'eden:gameplay/events/breeding',\
             max_amount:36,\
-            chance:0.05,\
-            chance_initial:5,\
+            chance:0.08,\
+            chance_initial:8,\
         },\
         brewing:{\
             loot_table:'eden:gameplay/events/brewing',\
-            max_amount:96,\
-            chance:0.05,\
-            chance_initial:5,\
+            max_amount:64,\
+            chance:0.07,\
+            chance_initial:7,\
         },\
         consuming:{\
             loot_table:'eden:gameplay/events/consuming',\
-            max_amount:128,\
-            chance:0.05,\
-            chance_initial:5,\
+            max_amount:96,\
+            chance:0.06,\
+            chance_initial:6,\
         }\
     }\
 }
