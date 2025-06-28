@@ -43,30 +43,65 @@ share_stats_cost:1,\
             max_amount:96,\
             chance:0.1,\
             chance_initial:10,\
+            type:fishing,\
+            icon:fishing_rod\
         },\
         killing:{\
             loot_table:'eden:gameplay/events/killing',\
             max_amount:128,\
             chance:0.09,\
             chance_initial:9,\
+            type:killing,\
+            icon:iron_sword\
         },\
         breeding:{\
             loot_table:'eden:gameplay/events/breeding',\
             max_amount:36,\
             chance:0.08,\
             chance_initial:8,\
+            type:breeding,\
+            icon:wheat\
         },\
         brewing:{\
             loot_table:'eden:gameplay/events/brewing',\
             max_amount:64,\
             chance:0.07,\
             chance_initial:7,\
+            type:brewing,\
+            icon:potion\
         },\
         consuming:{\
             loot_table:'eden:gameplay/events/consuming',\
             max_amount:96,\
             chance:0.06,\
             chance_initial:6,\
+            type:consuming,\
+            icon:bread\
         }\
     }\
+}
+
+data modify storage eden:settings nice_actions merge value {\
+    command_template_costs:"function nice_actions:dialog/command_template/config/costs {rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}",\
+    command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}",\
+        events:{\
+            misc:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_misc {monday:$(monday),tuesday:$(tuesday),wednesday:$(wednesday),thursday:$(thursday),friday:$(friday),saturday:$(saturday),sunday:$(sunday),event_msg:$(event_msg)}"\
+            },\
+            fishing:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_type {type:fishing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}"\
+            },\
+            killing:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_type {type:killing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}"\
+            },\
+            breeding:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_type {type:breeding,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}"\
+            },\
+            brewing:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_type {type:brewing,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}"\
+            },\
+            consuming:{\
+                command_template:"function nice_actions:dialog/command_template/config/events_type {type:consuming,loot_table:'$(loot_table)',max_amount:$(max_amount),chance:$(chance)}"\
+            },\
+        }\
 }

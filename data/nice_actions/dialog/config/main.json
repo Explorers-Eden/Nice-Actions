@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.config.main.description",
+      "fallback": "Select An Option To Configure:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.config.main.title.external",
+    "fallback": "Nice Actions Config"
+  },
+  "title": {
+    "translate": "menu.nice_actions.config.main.title",
+    "fallback": "Nice Actions: Admin Configuration"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.events",
+        "fallback": "Events"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:config/events"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.costs",
+        "fallback": "Exp Costs"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/costs with storage eden:settings nice_actions"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.misc",
+        "fallback": "Miscellaneous"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/misc with storage eden:settings nice_actions"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.set_spawn",
+        "fallback": "Set Spawnpoint"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.set_spawn.tooltip",
+        "fallback": "Set the spawnpoint players can teleport to right where you're standing."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/command_template/config/set_spawn"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.restore.title",
+        "fallback": "Restore Default Settings",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:config/restore_default"
+      }
+    },
+    {
+       "label": {
+        "translate": "menu.eden.info.title",
+        "fallback": "Explorer's Eden",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:info"
+      }
+    }
+  ]
+}

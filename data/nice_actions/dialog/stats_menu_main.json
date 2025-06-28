@@ -68,7 +68,7 @@
     },
     {
       "label": {
-        "translate": "option.nice_actions.stats.misc",
+        "translate": "option.nice_actions.misc",
         "fallback": "Miscellaneous"
       },
       "action": {

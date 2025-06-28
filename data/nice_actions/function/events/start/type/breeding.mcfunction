@@ -1,4 +1,4 @@
-$execute store result score $required_amount nice_actions.events.counter run random value 2..$(max_amount)
+$execute store result score $required_amount nice_actions.events.counter run random value 4..$(max_amount)
 execute store result score $event_type eden.technical run random value 1..21
 scoreboard players set $event_active eden.technical 1
 

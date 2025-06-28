@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.nice_actions.config.main.description",
+      "fallback": "Select An Option To Configure:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.config.main.title.external",
+    "fallback": "Nice Actions Config"
+  },
+  "title": {
+    "translate": "menu.nice_actions.config.main.title",
+    "fallback": "Nice Actions: Admin Configuration"
+  },
+  "pause": false,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "nice_actions:config/main"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_actions.events.breeding",
+        "fallback": "Breeding"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_type with storage eden:settings nice_actions.events.breeding"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.events.brewing",
+        "fallback": "Brewing"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_type with storage eden:settings nice_actions.events.brewing"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.events.consuming",
+        "fallback": "Consuming"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_type with storage eden:settings nice_actions.events.consuming"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.events.fishing",
+        "fallback": "Fishing"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_type with storage eden:settings nice_actions.events.fishing"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.events.killing",
+        "fallback": "Killing"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_type with storage eden:settings nice_actions.events.killing"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.misc",
+        "fallback": "Miscellaneous"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "function nice_actions:dialog/dynamic/config/events_misc with storage eden:settings nice_actions.events.misc"
+      }
+    }
+  ]
+}

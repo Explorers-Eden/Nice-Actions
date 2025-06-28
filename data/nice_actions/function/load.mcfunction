@@ -24,6 +24,7 @@ scoreboard objectives add nice_actions.has_slept minecraft.custom:minecraft.slee
 scoreboard players reset * nice_actions.has_slept
 scoreboard players reset $sleep_triggered eden.technical
 scoreboard players reset $sleep_msg_scheduled eden.technical
+scoreboard players set $1 eden.technical 1
 scoreboard players set $5 eden.technical 5
 scoreboard players set $6 eden.technical 6
 scoreboard players set $12 eden.technical 12
