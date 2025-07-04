@@ -8,15 +8,6 @@
         "fallback": "Proceeding will reset all configured values. Do you want to continue?"
       },
       "width": 1024
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "translate": "menu.nice_actions.restore.warning",
-        "fallback": "Restoring default values will in most cases not affect already existing mobs!",
-        "color": "gray"
-      },
-      "width": 1024
     }
   ],
   "can_close_with_escape": true,
@@ -40,7 +31,7 @@
   },
   "no": {
     "label": {
-      "translate": "menu.mob_manager.back",
+      "translate": "option.nice_actions.back",
       "fallback": "Back"
     },
     "action": {

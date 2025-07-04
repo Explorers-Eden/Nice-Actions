@@ -8,7 +8,6 @@
    "menu.nice_actions.select_statistic.description": "Select A Statistic To Share:",
    "menu.nice_actions.stats_menu_hostile.title": "Nice Actions: Hostile Mob Kills",
    "menu.nice_actions.restore.description": "Proceeding will reset all configured values. Do you want to continue?",
-   "menu.nice_actions.restore.warning": "Restoring default values will in most cases not affect already existing mobs!",
    "menu.nice_actions.config.main.title": "Nice Actions: Admin Configuration",
    "menu.nice_actions.config.main.title.external": "Nice Actions Config",
    "menu.nice_actions.config.main.description": "Select An Option To Configure:",
