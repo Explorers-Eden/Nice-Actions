@@ -1,5 +1,7 @@
 function nice_actions:events/stop
 
+scoreboard players add @a nice_actions.events.counter 0
+
 execute \
 if data storage eden:settings nice_actions.events.misc{monday:"enabled"} \
 if data storage eden:calendar global{weekday: "Monday"} \

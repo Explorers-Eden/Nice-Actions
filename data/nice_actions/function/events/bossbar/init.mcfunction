@@ -1,4 +1,5 @@
 schedule function nice_actions:events/bossbar/init 1s
+scoreboard players add @a nice_actions.events.counter 0
 
 execute as @a[scores={nice_actions.events.participate=1}] \
 if score $event_active eden.technical matches 1 \

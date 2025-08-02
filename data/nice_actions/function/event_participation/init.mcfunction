@@ -1,4 +1,5 @@
 scoreboard players add @s nice_actions.events.participate 0
+scoreboard players add @s nice_actions.events.counter 0
 
 execute at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 
