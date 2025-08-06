@@ -6,11 +6,11 @@ execute anchored feet positioned ~ ~ ~ run particle minecraft:trial_spawner_dete
 $loot spawn ~ ~ ~ loot $(loot_table)
 
 execute if data storage eden:settings nice_actions.events.misc{event_msg:"title"} run \
-title @a[scores={nice_actions.events.participate=1}] title \
+title @s[scores={nice_actions.events.participate=1}] title \
 {"bold":false,"color":"#54FF71","italic":false,"text":"Event completed!"}
 
 execute if data storage eden:settings nice_actions.events.misc{event_msg:"title"} run \
-title @a[scores={nice_actions.events.participate=1}] subtitle \
+title @s[scores={nice_actions.events.participate=1}] subtitle \
 [\
 {"bold":false,"color":"gray","italic":false,"text":"- "},\
 {"bold":false,"color":"white","italic":false,"text":"Enjoy Your Reward"},\
@@ -18,7 +18,7 @@ title @a[scores={nice_actions.events.participate=1}] subtitle \
 ]
 
 execute if data storage eden:settings nice_actions.events.misc{event_msg:"actionbar"} run \
-title @a[scores={nice_actions.events.participate=1}] actionbar \
+title @s[scores={nice_actions.events.participate=1}] actionbar \
 [\
 {"bold":false,"color":"gray","italic":false,"text":"- "},\
 {"bold":false,"color":"white","italic":false,"text":"Event completed!"},\
@@ -26,7 +26,7 @@ title @a[scores={nice_actions.events.participate=1}] actionbar \
 ]
 
 execute if data storage eden:settings nice_actions.events.misc{event_msg:"chat"} run \
-tellraw @a[scores={nice_actions.events.participate=1}] \
+tellraw @s[scores={nice_actions.events.participate=1}] \
 [\
 {"text":"▊ ","color":"#89CFF0","bold":false,"italic":false},\
 {"bold":false,"color":"white","italic":false,"text":"Event completed: Enjoy Your Reward"}\

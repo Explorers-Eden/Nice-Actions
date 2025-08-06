@@ -7,7 +7,6 @@ execute if score $event_type eden.technical matches 2 run data modify storage ed
 execute if score $event_type eden.technical matches 3 run data modify storage eden:events nice_actions.fishing set value "salmon"
 execute if score $event_type eden.technical matches 4 run data modify storage eden:events nice_actions.fishing set value "tropical_fish"
 
-
 execute if score $event_type eden.technical matches 1 run data modify storage eden:events nice_actions.msg set value '{"bold":false,"color":"white","italic":false,"text":"Fish "},{"bold":true,"color":"white","italic":false,"score":{"name":"$required_amount","objective":"nice_actions.events.counter"}},{"bold":false,"color":"white","italic":false,"text":" Cod"}'
 execute if score $event_type eden.technical matches 2 run data modify storage eden:events nice_actions.msg set value '{"bold":false,"color":"white","italic":false,"text":"Fish "},{"bold":true,"color":"white","italic":false,"score":{"name":"$required_amount","objective":"nice_actions.events.counter"}},{"bold":false,"color":"white","italic":false,"text":" Pufferfish"}'
 execute if score $event_type eden.technical matches 3 run data modify storage eden:events nice_actions.msg set value '{"bold":false,"color":"white","italic":false,"text":"Fish "},{"bold":true,"color":"white","italic":false,"score":{"name":"$required_amount","objective":"nice_actions.events.counter"}},{"bold":false,"color":"white","italic":false,"text":" Salmon"}'
