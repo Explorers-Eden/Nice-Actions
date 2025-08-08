@@ -1,0 +1,6 @@
+## Changes:
+- Changed starting message of events a bit
+- Reduced default values for max amount needed for some events
+
+## Fixes:
+- Events ignoring configured chances for triggering

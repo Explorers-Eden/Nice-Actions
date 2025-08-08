@@ -2,7 +2,7 @@ execute at @a[scores={nice_actions.events.participate=1}] run playsound minecraf
 
 execute if data storage eden:settings nice_actions.events.misc{event_msg:"title"} run \
 title @a[scores={nice_actions.events.participate=1}] title \
-{"bold":false,"color":"#54FF71","italic":false,"text":"Daily Event Started"}
+{"bold":false,"color":"#54FF71","italic":false,"text":"Event Started"}
 
 $execute if data storage eden:settings nice_actions.events.misc{event_msg:"title"} run \
 title @a[scores={nice_actions.events.participate=1}] subtitle \
@@ -16,7 +16,7 @@ $execute if data storage eden:settings nice_actions.events.misc{event_msg:"actio
 title @a[scores={nice_actions.events.participate=1}] actionbar \
 [\
 {"bold":false,"color":"gray","italic":false,"text":"- "},\
-{"bold":false,"color":"white","italic":false,"text":"Daily Event Started: "},\
+{"bold":false,"color":"white","italic":false,"text":"Event Started: "},\
 $(msg),\
 {"bold":false,"color":"gray","italic":false,"text":" -"}\
 ]
@@ -25,6 +25,6 @@ $execute if data storage eden:settings nice_actions.events.misc{event_msg:"chat"
 tellraw @a[scores={nice_actions.events.participate=1}] \
 [\
 {"text":"▊ ","color":"#89CFF0","bold":false,"italic":false},\
-{"bold":false,"color":"white","italic":false,"text":"Daily Event Started: "},\
+{"bold":false,"color":"white","italic":false,"text":"Event Started: "},\
 $(msg)\
 ]
