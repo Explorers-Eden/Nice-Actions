@@ -9,6 +9,7 @@
 	"nice_actions:calendar/init",
 	"nice_actions:time_hud/update/init",
 	"nice_actions:coords_hud/update/init",
-	"nice_actions:events/bossbar/init"
+	"nice_actions:events/bossbar/init",
+	"nice_actions:events/init"
 	]
 }

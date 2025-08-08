@@ -1,5 +1,3 @@
-function nice_actions:events/stop
-
 scoreboard players add @a nice_actions.events.counter 0
 
 execute \
