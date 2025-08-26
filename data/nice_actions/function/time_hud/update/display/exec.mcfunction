@@ -18,9 +18,9 @@ execute if data storage eden:calendar global{season:"Spring"} run data modify st
 execute if data storage eden:calendar global{season:"Summer"} run data modify storage eden:temp huds.season_color set value "FFDD54"
 execute if data storage eden:calendar global{season:"Autumn"} run data modify storage eden:temp huds.season_color set value "BA652D"
 
-execute if predicate eden:weather/clear run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#FFFC96","italic":false,"text":"☀ "}
-execute if predicate eden:weather/rain run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#96D5FF","italic":false,"text":"🌧 "}
-execute if predicate eden:weather/thunder run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#FFF82E","italic":false,"text":"⚡ "}
+execute if predicate nice_actions:weather/clear run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#FFFC96","italic":false,"text":"☀ "}
+execute if predicate nice_actions:weather/rain run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#96D5FF","italic":false,"text":"🌧 "}
+execute if predicate nice_actions:weather/thunder run data modify storage eden:temp huds.weather set value {"bold":false,"color":"#FFF82E","italic":false,"text":"⚡ "}
 
 execute if data storage eden:settings nice_actions{time_format:12} run function nice_actions:time_hud/update/display/12_update with storage eden:temp huds
 execute if data storage eden:settings nice_actions{time_format:24} run function nice_actions:time_hud/update/display/24_update with storage eden:temp huds

@@ -60,7 +60,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_strength_potion",
+                  "translate": "item.nice_actions.ominous_strength_potion",
                   "fallback": "Ominous Strength Potion"
                 },
                 "minecraft:consumable": {
@@ -86,7 +86,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_strength_potion.lore",
+                    "translate": "item.nice_actions.ominous_strength_potion.lore",
                     "fallback": "Strength X (10:00)",
                     "color": "white",
                     "bold": false,
@@ -108,7 +108,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_speed_potion",
+                  "translate": "item.nice_actions.ominous_speed_potion",
                   "fallback": "Ominous Speed Potion"
                 },
                 "minecraft:consumable": {
@@ -134,7 +134,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_speed_potion.lore",
+                    "translate": "item.nice_actions.ominous_speed_potion.lore",
                     "fallback": "Speed X (10:00)",
                     "color": "white",
                     "bold": false,
@@ -156,7 +156,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_regeneration_potion",
+                  "translate": "item.nice_actions.ominous_regeneration_potion",
                   "fallback": "Ominous Regeneration Potion"
                 },
                 "minecraft:consumable": {
@@ -182,7 +182,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_regeneration_potion.lore",
+                    "translate": "item.nice_actions.ominous_regeneration_potion.lore",
                     "fallback": "Regeneration X (10:00)",
                     "color": "white",
                     "bold": false,
@@ -204,7 +204,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_jump_boost_potion",
+                  "translate": "item.nice_actions.ominous_jump_boost_potion",
                   "fallback": "Ominous Jump Boost Potion"
                 },
                 "minecraft:consumable": {
@@ -230,7 +230,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_jump_boost_potion.lore",
+                    "translate": "item.nice_actions.ominous_jump_boost_potion.lore",
                     "fallback": "Jump Boost X (10:00)",
                     "color": "white",
                     "bold": false,
@@ -252,7 +252,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_luck_potion",
+                  "translate": "item.nice_actions.ominous_luck_potion",
                   "fallback": "Ominous Luck Potion"
                 },
                 "minecraft:consumable": {
@@ -278,7 +278,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_luck_potion.lore",
+                    "translate": "item.nice_actions.ominous_luck_potion.lore",
                     "fallback": "Luck X (10:00)",
                     "color": "white",
                     "bold": false,
@@ -300,7 +300,7 @@
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.ominous_saturation_potion",
+                  "translate": "item.nice_actions.ominous_saturation_potion",
                   "fallback": "Ominous Saturation Potion"
                 },
                 "minecraft:consumable": {
@@ -326,7 +326,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.ominous_saturation_potion.lore",
+                    "translate": "item.nice_actions.ominous_saturation_potion.lore",
                     "fallback": "Saturation X (10:00)",
                     "color": "white",
                     "bold": false,

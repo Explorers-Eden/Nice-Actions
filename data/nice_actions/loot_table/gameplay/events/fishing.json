@@ -121,7 +121,7 @@
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.sunken_treasure_chest",
+                  "translate": "item.nice_actions.sunken_treasure_chest",
                   "fallback": "Sunken Treasure Chest"
                 }
               }
@@ -143,7 +143,7 @@
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.sunken_treasure_chest",
+                  "translate": "item.nice_actions.sunken_treasure_chest",
                   "fallback": "Sunken Treasure Chest"
                 }
               }

@@ -1,4 +1,4 @@
-tellraw @s {"bold":true,"color":"#F5E8C9","italic":false,"nbt":"villager_data.name","storage":"eden:temp"}
+tellraw @s {"bold":true,"color":"#F5E8C9","italic":false,"nbt":"villager_data.name","storage":"nice_actions:temp"}
 execute if data entity @n[type=villager] VillagerData{type: "minecraft:desert"} run function villager_data:msg_elements/profession/desert
 execute if data entity @n[type=villager] VillagerData{type: "minecraft:jungle"} run function villager_data:msg_elements/profession/jungle
 execute if data entity @n[type=villager] VillagerData{type: "minecraft:plains"} run function villager_data:msg_elements/profession/plains

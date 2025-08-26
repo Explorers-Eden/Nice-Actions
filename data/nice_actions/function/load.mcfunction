@@ -1,5 +1,5 @@
 ##default technical scoreboard
-scoreboard objectives add eden.technical dummy
+scoreboard objectives add nice_actions.technical dummy
 
 ##add additional scoreboards
 scoreboard objectives add nice_actions.dialog_trigger trigger {"bold":false,"color":"gold","italic":false,"text":"Nice Actions"}
@@ -22,16 +22,16 @@ scoreboard objectives add nice_actions.events.counter dummy
 scoreboard objectives add nice_actions.calendar dummy
 scoreboard objectives add nice_actions.has_slept minecraft.custom:minecraft.sleep_in_bed
 scoreboard players reset * nice_actions.has_slept
-scoreboard players reset $sleep_triggered eden.technical
-scoreboard players reset $sleep_msg_scheduled eden.technical
-scoreboard players set $1 eden.technical 1
-scoreboard players set $5 eden.technical 5
-scoreboard players set $6 eden.technical 6
-scoreboard players set $12 eden.technical 12
-scoreboard players set $18 eden.technical 18
-scoreboard players set $24 eden.technical 24
-scoreboard players set $60 eden.technical 60
-scoreboard players set $100 eden.technical 100
+scoreboard players reset $sleep_triggered nice_actions.technical
+scoreboard players reset $sleep_msg_scheduled nice_actions.technical
+scoreboard players set $1 nice_actions.technical 1
+scoreboard players set $5 nice_actions.technical 5
+scoreboard players set $6 nice_actions.technical 6
+scoreboard players set $12 nice_actions.technical 12
+scoreboard players set $18 nice_actions.technical 18
+scoreboard players set $24 nice_actions.technical 24
+scoreboard players set $60 nice_actions.technical 60
+scoreboard players set $100 nice_actions.technical 100
 execute unless score $day nice_actions.calendar matches 1.. run scoreboard players set $day nice_actions.calendar 1
 execute unless score $month nice_actions.calendar matches 1.. run scoreboard players set $month nice_actions.calendar 1
 execute unless score $year nice_actions.calendar matches 1.. run scoreboard players set $year nice_actions.calendar 1

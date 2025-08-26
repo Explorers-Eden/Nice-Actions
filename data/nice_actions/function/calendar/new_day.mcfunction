@@ -6,5 +6,5 @@ scoreboard players add @a nice_actions.days_lived.counter 1
 
 scoreboard players reset * nice_actions.has_slept
 scoreboard players reset * nice_actions.has_died_today
-scoreboard players reset $sleep_triggered eden.technical
-scoreboard players reset $sleep_msg_scheduled eden.technical
+scoreboard players reset $sleep_triggered nice_actions.technical
+scoreboard players reset $sleep_msg_scheduled nice_actions.technical

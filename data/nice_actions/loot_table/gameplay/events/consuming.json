@@ -52,7 +52,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.hero_of_the_village_stew",
+                  "translate": "item.nice_actions.hero_of_the_village_stew",
                   "fallback": "Hero of the Village Stew"
                 }
               }
@@ -77,7 +77,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.dolphins_grace_stew",
+                  "translate": "item.nice_actions.dolphins_grace_stew",
                   "fallback": "Dolphins Grace Stew"
                 }
               }
@@ -102,7 +102,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.fire_resistance_stew",
+                  "translate": "item.nice_actions.fire_resistance_stew",
                   "fallback": "Fire Resistance Stew"
                 }
               }
@@ -202,7 +202,7 @@
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
-                  "translate": "items.nice_actions.edible_totem_of_undying",
+                  "translate": "item.nice_actions.edible_totem_of_undying",
                   "fallback": "Edible Totem of Undying"
                 },
                 "minecraft:consumable": {
@@ -217,7 +217,7 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "items.nice_actions.edible_totem_of_undying.lore",
+                    "translate": "item.nice_actions.edible_totem_of_undying.lore",
                     "fallback": "Clears all effects when eaten",
                     "color": "white",
                     "bold": false,

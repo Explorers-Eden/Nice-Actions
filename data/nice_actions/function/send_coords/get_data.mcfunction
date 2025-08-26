@@ -6,7 +6,7 @@ data modify storage eden:temp send_coords.dimension set from entity @s Dimension
 execute if data entity @s {Dimension:"minecraft:overworld"} run data modify storage eden:temp send_coords.dimension set value "Overworld"
 execute if data entity @s {Dimension:"minecraft:the_nether"} run data modify storage eden:temp send_coords.dimension set value "The Nether"
 execute if data entity @s {Dimension:"minecraft:the_end"} run data modify storage eden:temp send_coords.dimension set value "The End"
-execute if data entity @s {Dimension:"eden:astral_plane"} run data modify storage eden:temp send_coords.dimension set value "Astral Plane"
+execute if data entity @s {Dimension:"nice_actions:astral_plane"} run data modify storage eden:temp send_coords.dimension set value "Astral Plane"
 execute if data entity @s {Dimension:"kattersstructures:deep_blue"} run data modify storage eden:temp send_coords.dimension set value "Deep Blue"
 
 data modify storage eden:temp send_coords.12_hour set from storage eden:calendar global.12_hour

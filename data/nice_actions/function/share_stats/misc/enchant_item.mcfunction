@@ -10,7 +10,7 @@ tellraw @a[distance=..32] [\
 {"selector":"@s","color":"white"},\
 {"bold":false,"color":"white","text":" has enchanted ","italic":false},\
 {"bold":true,"color":"white","italic":false,"score":{"name":"@s","objective":"nice_actions.stats.misc.enchant_item"}},\
-{"text":" items.","color":"white","bold":false,"italic":false}\
+{"text":" item.","color":"white","bold":false,"italic":false}\
 ]\
 
 $experience add @s -$(share_stats_cost) levels

@@ -86,17 +86,6 @@
         "type": "show_dialog",
         "dialog": "nice_actions:config/restore_default"
       }
-    },
-    {
-       "label": {
-        "translate": "menu.eden.info.title",
-        "fallback": "Explorer's Eden",
-        "color": "gray"
-      },
-      "action": {
-        "type": "show_dialog",
-        "dialog": "nice_actions:info"
-      }
     }
   ]
 }

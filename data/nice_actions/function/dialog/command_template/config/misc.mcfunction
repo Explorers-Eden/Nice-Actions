@@ -4,10 +4,10 @@ execute if data storage eden:settings nice_actions{time_format:"12"} run data mo
 execute unless data storage eden:settings nice_actions{time_format:"24"} run data modify storage eden:settings nice_actions.time_format_initial set value "true"
 
 $execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"range":{"min":$(rtp_height_max)}} \
-run scoreboard players set $temp_height eden.technical $(rtp_height_max)
+run scoreboard players set $temp_height nice_actions.technical $(rtp_height_max)
 
 $execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"range":{"min":$(rtp_height_max)}} \
 store result storage eden:settings nice_actions.rtp_height_min int 1 \
-run scoreboard players operation $temp_height eden.technical -= $1 eden.technical
+run scoreboard players operation $temp_height nice_actions.technical -= $1 nice_actions.technical
 
 dialog show @s nice_actions:config/main

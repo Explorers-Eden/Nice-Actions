@@ -1,5 +1,5 @@
 scoreboard players add @a nice_actions.events.counter 0
-scoreboard players set $event_checked eden.technical 1
+scoreboard players set $event_checked nice_actions.technical 1
 
 execute \
 if data storage eden:settings nice_actions.events.misc{monday:"enabled"} \

@@ -3,8 +3,8 @@ execute unless score @s nice_actions.stats.travel.swim matches 1.. run return ru
 {"bold":false,"color":"white","fallback":"You have not done that yet.","italic":false,"translate":"text.nice_actions.share_stats_0_score"}\
 ]\
 
-scoreboard players operation $temp_value_travel_stat eden.technical = @s nice_actions.stats.travel.swim
-execute store result score $travel_msg_output eden.technical run scoreboard players operation $temp_value_travel_stat eden.technical /= $100 eden.technical
+scoreboard players operation $temp_value_travel_stat nice_actions.technical = @s nice_actions.stats.travel.swim
+execute store result score $travel_msg_output nice_actions.technical run scoreboard players operation $temp_value_travel_stat nice_actions.technical /= $100 nice_actions.technical
 
 execute at @a[distance=..32] run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 
@@ -12,7 +12,7 @@ tellraw @a[distance=..32] [\
 {"text":"▊ ","color":"#89CFF0","bold":false,"italic":false},\
 {"selector":"@s","color":"white"},\
 {"bold":false,"color":"white","text":" swam ","italic":false},\
-{"bold":true,"color":"white","italic":false,"score":{"name":"$travel_msg_output","objective":"eden.technical"}},\
+{"bold":true,"color":"white","italic":false,"score":{"name":"$travel_msg_output","objective":"nice_actions.technical"}},\
 {"text":" ","color":"#89CFF0","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"blocks","italic":false,"translate":"text.nice_actions.blocks"},\
 {"text":".","color":"white","bold":false,"italic":false}\

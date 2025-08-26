@@ -5,11 +5,11 @@ tellraw @s {"bold":true,"color":"#F5E8C9","italic":false,"text":"Location Data:"
 #position
 tellraw @s [\
 {"bold":false,"color":"white","italic":false,"text":"• Position: "},\
-{"bold":false,"color":"light_purple","italic":false,"text":"X"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.x","storage":"eden:temp"},\
+{"bold":false,"color":"light_purple","italic":false,"text":"X"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.x","storage":"nice_actions:temp"},\
 {"bold":false,"color":"dark_gray","italic":false,"text":" "},\
-{"bold":false,"color":"green","italic":false,"text":"Y"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.y","storage":"eden:temp"},\
+{"bold":false,"color":"green","italic":false,"text":"Y"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.y","storage":"nice_actions:temp"},\
 {"bold":false,"color":"dark_gray","italic":false,"text":" "},\
-{"bold":false,"color":"aqua","italic":false,"text":"Z"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.z","storage":"eden:temp"}\
+{"bold":false,"color":"aqua","italic":false,"text":"Z"},{"bold":false,"color":"dark_gray","italic":false,"text":":"},{"bold":false,"color":"gray","italic":false,"nbt":"villager_data.pos.z","storage":"nice_actions:temp"}\
 ]
 
 #home loc

@@ -12,7 +12,7 @@
         },
         {
           "type": "minecraft:tag",
-          "name": "eden:horse_armor",
+          "name": "nice_actions:horse_armor",
           "expand": true,
           "weight": 5
         },
@@ -63,7 +63,7 @@
         },
         {
           "type": "minecraft:tag",
-          "name": "eden:bucket_animals",
+          "name": "nice_actions:bucket_animals",
           "expand": true,
           "weight": 5
         },

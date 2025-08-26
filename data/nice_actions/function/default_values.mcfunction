@@ -39,7 +39,7 @@ share_stats_cost:1,\
             event_msg_chat_initial:"false",\
         },\
         fishing:{\
-            loot_table:'eden:gameplay/events/fishing',\
+            loot_table:'nice_actions:gameplay/events/fishing',\
             max_amount:48,\
             chance:0.1,\
             chance_initial:10,\
@@ -47,7 +47,7 @@ share_stats_cost:1,\
             icon:fishing_rod\
         },\
         killing:{\
-            loot_table:'eden:gameplay/events/killing',\
+            loot_table:'nice_actions:gameplay/events/killing',\
             max_amount:96,\
             chance:0.09,\
             chance_initial:9,\
@@ -55,7 +55,7 @@ share_stats_cost:1,\
             icon:iron_sword\
         },\
         breeding:{\
-            loot_table:'eden:gameplay/events/breeding',\
+            loot_table:'nice_actions:gameplay/events/breeding',\
             max_amount:24,\
             chance:0.08,\
             chance_initial:8,\
@@ -63,7 +63,7 @@ share_stats_cost:1,\
             icon:wheat\
         },\
         brewing:{\
-            loot_table:'eden:gameplay/events/brewing',\
+            loot_table:'nice_actions:gameplay/events/brewing',\
             max_amount:48,\
             chance:0.07,\
             chance_initial:7,\
@@ -71,7 +71,7 @@ share_stats_cost:1,\
             icon:potion\
         },\
         consuming:{\
-            loot_table:'eden:gameplay/events/consuming',\
+            loot_table:'nice_actions:gameplay/events/consuming',\
             max_amount:96,\
             chance:0.06,\
             chance_initial:6,\

@@ -6,7 +6,7 @@ data modify storage eden:temp death_coords.dimension set from entity @s LastDeat
 execute if data entity @s LastDeathLocation{dimension:"minecraft:overworld"} run data modify storage eden:temp death_coords.dimension set value "Overworld"
 execute if data entity @s LastDeathLocation{dimension:"minecraft:the_nether"} run data modify storage eden:temp death_coords.dimension set value "The Nether"
 execute if data entity @s LastDeathLocation{dimension:"minecraft:the_end"} run data modify storage eden:temp death_coords.dimension set value "The End"
-execute if data entity @s LastDeathLocation{dimension:"eden:astral_plane"} run data modify storage eden:temp death_coords.dimension set value "Astral Plane"
+execute if data entity @s LastDeathLocation{dimension:"nice_actions:astral_plane"} run data modify storage eden:temp death_coords.dimension set value "Astral Plane"
 execute if data entity @s LastDeathLocation{dimension:"kattersstructures:deep_blue"} run data modify storage eden:temp death_coords.dimension set value "Deep Blue"
 
 data modify storage eden:temp death_coords.cost set from storage eden:settings nice_actions.death_coords_cost

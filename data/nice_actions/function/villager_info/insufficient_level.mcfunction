@@ -4,6 +4,6 @@ tellraw @s [\
 {"bold":false,"color":"white","fallback":"Insufficient EXP Level","italic":false,"translate":"text.nice_actions.insufficient_level"},\
 {"bold":false,"color":"white","italic":false,"text":" ("},\
 {"bold":false,"color":"white","fallback":"Cost: ","italic":false,"translate":"text.nice_actions.cost"},\
-{"bold":false,"color":"white","nbt":"nice_actions.villager_info_cost","storage":"eden:settings"},\
+{"bold":false,"color":"white","nbt":"nice_actions.villager_info_cost","storage":"nice_actions:settings"},\
 {"bold":false,"color":"white","italic":false,"text":")."}\
 ]
