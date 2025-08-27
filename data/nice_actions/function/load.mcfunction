@@ -124,3 +124,6 @@ scoreboard objectives add nice_actions.stats.mined.deepslate_redstone_ore minecr
 scoreboard objectives add nice_actions.stats.mined.ancient_debris minecraft.mined:minecraft.ancient_debris
 scoreboard objectives add nice_actions.stats.mined.nether_gold_ore minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.mined:minecraft.nether_quartz_ore
+
+##set data pack version
+data modify storage eden:datapack nice_actions.version set value "1.4"
