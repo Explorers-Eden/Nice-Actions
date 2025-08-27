@@ -3,3 +3,4 @@
 - restructured some code
 
 ## Fixes:
+- needed exp level for an action not showing if a player has not enough exp level
