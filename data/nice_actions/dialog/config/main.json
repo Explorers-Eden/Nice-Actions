@@ -34,7 +34,7 @@
   "actions": [
     {
       "label": {
-        "translate": "option.nice_actions.events",
+        "translate": "option.nice_actions.events.config",
         "fallback": "Events"
       },
       "action": {

@@ -126,4 +126,4 @@ scoreboard objectives add nice_actions.stats.mined.nether_gold_ore minecraft.min
 scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.mined:minecraft.nether_quartz_ore
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "1.4"
+data modify storage eden:datapack nice_actions.version set value "1.5"

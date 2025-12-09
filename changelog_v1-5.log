@@ -1,0 +1,7 @@
+## Changes:
+- Added a proper message when a player tries to teleport home but has none
+- Last Death Location message now shows the location of the last Grave and whether it's looted or not instead of Last Death Location when [Nice Keep Inventory](https://modrinth.com/datapack/nice-keep-inventory) is also installed and Graves are enabled
+- Teleporting Home now also teleports leashed mobs, ridden mounts and nearby tamed pets that do not sit (Cat, Parrot, Wolf)
+
+## Fixes:
+- Villager info not displaying position of the villager 
