@@ -2,14 +2,18 @@ $execute in $(dimension) run forceload add $(x) $(z)
 
 $execute as @e[type=!player,distance=..24] \
     if data entity @s leash{UUID:$(uuid)} \
-    in $(dimension) positioned $(x) $(y) $(z) \
-        run tp @s $(x) $(y) $(z)
+    in $(dimension) \
+        run tp $(x) $(y) $(z)
+
+$execute as @e[type=!player,distance=..24] \
+    if data entity @s leash{UUID:$(uuid)} \
+    in $(dimension) run say yes        
 
 $execute as @e[type=#nice_actions:is_pet,distance=..24] \
     if data entity @s {Owner:$(uuid)} \
     unless data entity @s {Sitting:1b} \
     in $(dimension) \
-        run tp @s $(x) $(y) $(z)
+        run tp $(x) $(y) $(z)
 
 $execute at @s unless predicate nice_actions:entity/is_riding in $(dimension) run tp $(x) $(y) $(z)
 $execute at @s if predicate nice_actions:entity/is_riding in $(dimension) run tp @n[type=#nice_actions:is_mount] $(x) $(y) $(z)

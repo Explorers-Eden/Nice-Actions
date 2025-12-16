@@ -1,0 +1,6 @@
+## Changes:
+- Added enchanted Spears to reward pool of Killing event
+- TP actions on cooldown now show the time in seconds left in the chat message
+
+## Fixes:
+- TP Home action not teleporting leashed entities
