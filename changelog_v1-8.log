@@ -1,0 +1,6 @@
+## Changes:
+- Time Hud now also shows players sleeping and players needed for skipping night (when at least 1 player is sleeping)
+- Added button to Quick Action menu to transfer enchantments from offhand to mainhand item
+
+## Fixes:
+- Time format config option always showing "24 hours" regardless of current setting

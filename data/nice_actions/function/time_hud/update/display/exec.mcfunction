@@ -1,3 +1,5 @@
+function nice_actions:time_hud/update/display/sleeping/init
+
 execute store result storage eden:temp huds.uuid_0 int 1 run data get entity @s UUID[0]
 execute store result storage eden:temp huds.uuid_1 int 1 run data get entity @s UUID[1]
 execute store result storage eden:temp huds.uuid_2 int 1 run data get entity @s UUID[2]

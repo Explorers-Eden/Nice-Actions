@@ -39,6 +39,7 @@ execute unless data storage eden:calendar global.weekday run data modify storage
 
 ##add default values
 execute unless data storage eden:settings nice_actions run function nice_actions:default_values
+scoreboard players set $100 nice_actions.technical 100
 
 ##add player statistic scoreboards
 #misc
@@ -125,5 +126,8 @@ scoreboard objectives add nice_actions.stats.mined.ancient_debris minecraft.mine
 scoreboard objectives add nice_actions.stats.mined.nether_gold_ore minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.mined:minecraft.nether_quartz_ore
 
+##add enchantment option costs if not present
+execute unless data storage eden:settings nice_actions.transfer_enchantments_cost run data modify storage eden:settings nice_actions merge value {transfer_enchantments_cost:30,command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}"}
+
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "1.7"
+data modify storage eden:datapack nice_actions.version set value "1.8"

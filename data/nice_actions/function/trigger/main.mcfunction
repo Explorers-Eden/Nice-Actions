@@ -17,5 +17,6 @@ execute as @a[scores={nice_actions.dialog_trigger=10}] run function nice_actions
 execute as @a[scores={nice_actions.dialog_trigger=11}] run function nice_actions:villager_info/init with storage eden:settings nice_actions
 execute as @a[scores={nice_actions.dialog_trigger=12}] run function nice_actions:horse_info/init with storage eden:settings nice_actions
 execute as @a[scores={nice_actions.dialog_trigger=13}] run function nice_actions:event_participation/init
+execute as @a[scores={nice_actions.dialog_trigger=14}] run function nice_actions:transfer_enchantments/init with storage eden:settings nice_actions
 
 scoreboard players set @a nice_actions.dialog_trigger 0

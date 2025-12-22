@@ -95,7 +95,7 @@
       },
       "tooltip": {
         "translate": "option.nice_actions.sethome.tooltip",
-        "fallback": "Save this as your new private home point. The old one’s gone."
+        "fallback": "Save this as your new private home point. The old one's gone."
       },
       "action": {
         "type": "run_command",
@@ -226,6 +226,20 @@
       "action": {
         "type": "run_command",
         "command": "trigger nice_actions.dialog_trigger set 13"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.nice_actions.transfer_enchantments",
+        "fallback": "Transfer Enchantments"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.transfer_enchantments.tooltip",
+        "fallback": "Transfers enchantments from the item in your offhand to the item in the mainhand.\n\nDestroys the offhand item in the process.\n\nThe offhand item must not be an Enchanted Book.\n\nThe mainhand item must not already be enchanted.\n\nMainhand item has to be the same type as offhand item."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 14"
       }
     }
   ]
