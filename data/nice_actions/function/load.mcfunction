@@ -24,6 +24,12 @@ scoreboard objectives add nice_actions.has_slept minecraft.custom:minecraft.slee
 scoreboard players reset * nice_actions.has_slept
 scoreboard players reset $sleep_triggered nice_actions.technical
 scoreboard players reset $sleep_msg_scheduled nice_actions.technical
+execute unless score $day nice_actions.calendar matches 1.. run scoreboard players set $day nice_actions.calendar 1
+execute unless score $month nice_actions.calendar matches 1.. run scoreboard players set $month nice_actions.calendar 1
+execute unless score $year nice_actions.calendar matches 1.. run scoreboard players set $year nice_actions.calendar 1
+execute unless data storage eden:calendar global.weekday run data modify storage eden:calendar global.weekday set value "Monday"
+
+##fixed scoreboard values
 scoreboard players set $1 nice_actions.technical 1
 scoreboard players set $5 nice_actions.technical 5
 scoreboard players set $6 nice_actions.technical 6
@@ -32,14 +38,9 @@ scoreboard players set $18 nice_actions.technical 18
 scoreboard players set $24 nice_actions.technical 24
 scoreboard players set $60 nice_actions.technical 60
 scoreboard players set $100 nice_actions.technical 100
-execute unless score $day nice_actions.calendar matches 1.. run scoreboard players set $day nice_actions.calendar 1
-execute unless score $month nice_actions.calendar matches 1.. run scoreboard players set $month nice_actions.calendar 1
-execute unless score $year nice_actions.calendar matches 1.. run scoreboard players set $year nice_actions.calendar 1
-execute unless data storage eden:calendar global.weekday run data modify storage eden:calendar global.weekday set value "Monday"
 
 ##add default values
 execute unless data storage eden:settings nice_actions run function nice_actions:default_values
-scoreboard players set $100 nice_actions.technical 100
 
 ##add player statistic scoreboards
 #misc
@@ -130,4 +131,4 @@ scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.m
 execute unless data storage eden:settings nice_actions.transfer_enchantments_cost run data modify storage eden:settings nice_actions merge value {transfer_enchantments_cost:30,command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}"}
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "1.8"
+data modify storage eden:datapack nice_actions.version set value "1.9"

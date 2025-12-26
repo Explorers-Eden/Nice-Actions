@@ -17,7 +17,7 @@ $(weather),\
 {"bold":false,"color":"dark_gray","italic":false,"text":" | ","underlined":false},\
 {"bold":false,"color":"#$(season_color)","italic":false,"text":"$(month_name) $(day), $(year)"},\
 {"bold":false,"color":"dark_gray","italic":false,"text":" | ","underlined":false},\
-{"bold":false,"color":"white","italic":false,"text":"$(players_sleeping)/$(players_needed_sleeping) Zzz","underlined":false}\
+{"bold":false,"color":"white","italic":false,"text":"$(players_sleeping) Zzz","underlined":false}\
 ]
 
 data remove storage eden:temp huds

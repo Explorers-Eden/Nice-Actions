@@ -1,0 +1,4 @@
+## Changes:
+- Time Hud now only shows players currently sleeping (Minecraft math is too off to get the needed ones properly to work)
+
+## Fixes:
