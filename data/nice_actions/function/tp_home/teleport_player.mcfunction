@@ -1,4 +1,4 @@
-$execute in $(dimension) run forceload add $(x) $(z)
+#$execute in $(dimension) positioned $(x) $(y) $(z) run forceload add ~ ~
 
 $execute as @e[type=!player,distance=..24] \
     if data entity @s leash{UUID:$(uuid)} \
@@ -30,4 +30,4 @@ scoreboard players set @s nice_actions.tp_home.cooldown 1
 scoreboard players set @s nice_actions.tp_home.timer 0
 
 $experience add @s -$(cost) levels
-$execute in $(dimension) run forceload remove $(x) $(z)
+#$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~

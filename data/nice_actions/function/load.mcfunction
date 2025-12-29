@@ -129,6 +129,7 @@ scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.m
 
 ##add enchantment option costs if not present
 execute unless data storage eden:settings nice_actions.transfer_enchantments_cost run data modify storage eden:settings nice_actions merge value {transfer_enchantments_cost:30,command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}"}
+execute unless data storage eden:settings nice_actions.rtp_type run data modify storage eden:settings nice_actions merge value {rtp_type:"spawn",rtp_type_initial:"true",command_template_misc:"function nice_actions:dialog/command_template/config/misc {rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "1.9"
+data modify storage eden:datapack nice_actions.version set value "2.0"

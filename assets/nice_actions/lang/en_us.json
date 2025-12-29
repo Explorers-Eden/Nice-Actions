@@ -16,6 +16,9 @@
    "menu.nice_actions.config.misc.description": "Configure Miscellaneous Action Settings:",
    "menu.nice_actions.config.event.misc.description": "Configure Miscellaneous Event Settings:",
 
+   "option.nice_actions.rtp_type": "RTP Type",
+   "option.nice_actions.rtp_type_player": "Player Position",
+   "option.nice_actions.rtp_type_spawn": "Spawn Position",
    "option.nice_actions.transfer_enchantments": "Transfer Enchantments",
    "option.nice_actions.transfer_enchantments.tooltip": "Transfers enchantments from the item in your offhand to the item in the mainhand.\n\nDestroys the offhand item in the process.\n\nThe offhand item must not be an Enchanted Book.\n\nThe mainhand item must not already be enchanted.\n\nMainhand item has to be the same type as offhand item.",
    "option.nice_actions.option.max_amount": "Max Amount Needed",

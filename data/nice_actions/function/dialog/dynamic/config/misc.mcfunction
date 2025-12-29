@@ -48,6 +48,34 @@ $dialog show @s \
       ]\
     },\
     {\
+      "type":"minecraft:single_option",\
+      "key":"rtp_type",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.rtp_type",\
+        "fallback":"RTP Type"\
+      },\
+      "options":[\
+        {\
+          "id":"player",\
+          "display":{\
+            "translate":"option.nice_actions.rtp_type_player",\
+            "fallback":"Player Position",\
+            "color":"white"\
+          }\
+        },\
+        {\
+          "id":"spawn",\
+          "display":{\
+            "translate":"option.nice_actions.rtp_type_spawn",\
+            "fallback":"Spawn Position",\
+            "color":"white"\
+          },\
+          "initial":$(rtp_type_initial)\
+        }\
+      ]\
+    },\
+    {\
       "type":"minecraft:number_range",\
       "key":"rtp_radius",\
       "width": 256,\
