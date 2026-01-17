@@ -164,19 +164,6 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:number_range",\
-      "key":"enchantment_info_cost",\
-      "width": 256,\
-      "label":{\
-        "translate":"option.nice_actions.enchantment_info",\
-        "fallback":"Enchantment Info"\
-      },\
-      "start":0,\
-      "end":100,\
-      "step":1,\
-      "initial":$(enchantment_info_cost)\
-    },\
-    {\
-      "type":"minecraft:number_range",\
       "key":"transfer_enchantments_cost",\
       "width": 256,\
       "label":{\

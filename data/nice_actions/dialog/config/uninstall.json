@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:confirmation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.nice_actions.uninstall.description",
+        "color": "red"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.nice_actions.uninstall.description_2",
+        "color": "gray"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.nice_actions.title.uninstall.external"
+  },
+  "title": {
+    "translate": "menu.nice_actions.title.uninstall"
+  },
+  "pause": true,
+  "after_action": "close",
+  "yes": {
+    "label": {
+      "translate": "menu.nice_actions.confirm"
+    },
+    "action": {
+      "type": "run_command",
+      "command": "function nice_actions:uninstall"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "menu.nice_actions.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "nice_actions:config/main"
+    }
+  }
+}

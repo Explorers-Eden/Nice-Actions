@@ -1,5 +1,13 @@
+scoreboard objectives remove nice_actions.hud.time
+
 ##default technical scoreboard
 scoreboard objectives add nice_actions.technical dummy
+
+##time/data bossbar
+bossbar add eden:time_hud "Time/Date Hud"
+bossbar set eden:time_hud visible true
+bossbar set eden:time_hud color white
+bossbar set eden:time_hud max 24
 
 ##add additional scoreboards
 scoreboard objectives add nice_actions.dialog_trigger trigger {"bold":false,"color":"gold","italic":false,"text":"Nice Actions"}
@@ -14,7 +22,6 @@ scoreboard objectives add nice_actions.tp_home.timer dummy
 scoreboard objectives add nice_actions.sit dummy
 scoreboard objectives add nice_actions.has_died_today deathCount
 scoreboard objectives add nice_actions.hud.coords dummy
-scoreboard objectives add nice_actions.hud.time dummy
 scoreboard objectives add nice_actions.events.participate dummy
 scoreboard objectives add nice_actions.events.counter dummy
 
@@ -129,7 +136,9 @@ scoreboard objectives add nice_actions.stats.mined.nether_quartz_ore minecraft.m
 
 ##add enchantment option costs if not present
 execute unless data storage eden:settings nice_actions.transfer_enchantments_cost run data modify storage eden:settings nice_actions merge value {transfer_enchantments_cost:30,command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}"}
-execute unless data storage eden:settings nice_actions.rtp_type run data modify storage eden:settings nice_actions merge value {rtp_type:"spawn",rtp_type_initial:"true",command_template_misc:"function nice_actions:dialog/command_template/config/misc {rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
+execute unless data storage eden:settings nice_actions.rtp_type run data modify storage eden:settings nice_actions merge value {rtp_type:"spawn",rtp_type_initial:"true",command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
+execute unless data storage eden:settings nice_actions.time_hud_style_1_initial run data modify storage eden:settings nice_actions merge value {time_hud_style:1,time_hud_style_1_initial:"true",time_hud_style_2_initial:"false",time_hud_style_3_initial:"false",time_hud_style_4_initial:"false",command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
+
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "2.0"
+data modify storage eden:datapack nice_actions.version set value "2.2"

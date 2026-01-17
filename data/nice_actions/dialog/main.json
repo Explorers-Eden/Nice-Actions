@@ -1,20 +1,5 @@
 {
   "type": "minecraft:multi_action",
-  "body": {
-    "type": "minecraft:item",
-    "item": {
-      "id": "minecraft:writable_book",
-      "components": {
-        "minecraft:tooltip_display": {
-          "hide_tooltip": true
-        }
-      }
-    },
-    "description": {
-      "translate": "menu.nice_actions.description",
-      "fallback": "Select An Action:"
-    }
-  },
   "can_close_with_escape": true,
   "external_title": {
     "translate": "menu.nice_actions.main.title.external",

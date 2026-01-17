@@ -86,6 +86,16 @@
         "type": "show_dialog",
         "dialog": "nice_actions:config/restore_default"
       }
+    },
+    {
+      "label": {
+        "translate": "menu.nice_actions.title.uninstall",
+        "color": "gray"
+      },
+      "action": {
+        "type": "show_dialog",
+        "dialog": "nice_actions:config/uninstall"
+      }
     }
   ]
 }

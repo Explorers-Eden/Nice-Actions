@@ -1,0 +1,8 @@
+## Changes:
+- Added option to config menu for uninstalling data pack
+- Performance improvements to Time/Date Hud (especially with larger player counts having it displayed)
+- Time/Date Hud now shows minutes more precise
+- Time/Date Hud now shows a Star Icon instead of a Sun Icon on clear nights
+
+## Fixes:
+- Exp Cost config menu cannot be opened due to missing argument

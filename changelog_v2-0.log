@@ -1,5 +1,0 @@
-## Changes:
-- Added option to change whether rtp should be executed positioned from spawn or the players position
-- Max RTP height is now 120 blocks per default
-
-## Fixes:

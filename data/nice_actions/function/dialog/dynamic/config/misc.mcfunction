@@ -49,6 +49,49 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:single_option",\
+      "key":"time_hud_style",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.time_hud_style",\
+        "fallback":"Time/Date Hud Style"\
+      },\
+      "options":[\
+        {\
+          "id":"1",\
+          "display":{\
+            "text":"1",\
+            "color":"white"\
+          },\
+          "initial":$(time_hud_style_1_initial)\
+        },\
+        {\
+          "id":"2",\
+          "display":{\
+            "text":"2",\
+            "color":"white"\
+          },\
+          "initial":$(time_hud_style_2_initial)\
+        },\
+        {\
+          "id":"3",\
+          "display":{\
+            "text":"3",\
+            "color":"white"\
+          },\
+          "initial":$(time_hud_style_3_initial)\
+        },\
+        {\
+          "id":"4",\
+          "display":{\
+            "text":"4",\
+            "color":"white"\
+          },\
+          "initial":$(time_hud_style_4_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
       "key":"rtp_type",\
       "width": 256,\
       "label":{\

@@ -1,0 +1,7 @@
+execute if data storage eden:calendar global{weekday: "Monday"} run return run data modify storage eden:calendar global.weekday_short set value "Mon"
+execute if data storage eden:calendar global{weekday: "Sunday"} run return run data modify storage eden:calendar global.weekday_short set value "Sun"
+execute if data storage eden:calendar global{weekday: "Saturday"} run return run data modify storage eden:calendar global.weekday_short set value "Sat"
+execute if data storage eden:calendar global{weekday: "Friday"} run return run data modify storage eden:calendar global.weekday_short set value "Fri"
+execute if data storage eden:calendar global{weekday: "Thursday"} run return run data modify storage eden:calendar global.weekday_short set value "Thu"
+execute if data storage eden:calendar global{weekday: "Wednesday"} run return run data modify storage eden:calendar global.weekday_short set value "Wed"
+execute if data storage eden:calendar global{weekday: "Tuesday"} run return run data modify storage eden:calendar global.weekday_short set value "Tue"

@@ -1,4 +1,11 @@
+scoreboard players set $players_sleeping nice_actions.technical 0
+
 data modify storage eden:settings nice_actions merge value {\
+time_hud_style:1,\
+time_hud_style_1_initial:"true",\
+time_hud_style_2_initial:"false",\
+time_hud_style_3_initial:"false",\
+time_hud_style_4_initial:"false",\
 transfer_enchantments_cost:30,\
 rtp_type: "spawn",\
 rtp_type_initial: "true",\
@@ -86,7 +93,7 @@ share_stats_cost:1,\
 
 data modify storage eden:settings nice_actions merge value {\
     command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}",\
-    command_template_misc:"function nice_actions:dialog/command_template/config/misc {rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}",\
+    command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}",\
         events:{\
             misc:{\
                 command_template:"function nice_actions:dialog/command_template/config/events_misc {monday:$(monday),tuesday:$(tuesday),wednesday:$(wednesday),thursday:$(thursday),friday:$(friday),saturday:$(saturday),sunday:$(sunday),event_msg:$(event_msg)}"\
