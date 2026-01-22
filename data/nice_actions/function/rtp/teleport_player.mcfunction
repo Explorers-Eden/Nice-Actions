@@ -1,5 +1,8 @@
-$execute if data storage eden:settings nice_actions{rtp_type:"spawn"} in minecraft:overworld positioned $(posx) ~ $(posz) run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
-$execute if data storage eden:settings nice_actions{rtp_type:"player"} in $(dimension) positioned ~$(posx) ~ ~$(posz) run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
+$execute if data storage eden:settings nice_actions{rtp_type:"spawn"} if predicate nice_actions:entity/is_riding in $(dimension) positioned $(posx) $(posy) $(posz) on vehicle run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
+$execute if data storage eden:settings nice_actions{rtp_type:"spawn"} unless predicate nice_actions:entity/is_riding in $(dimension) positioned $(posx) $(posy) $(posz) run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
+
+$execute if data storage eden:settings nice_actions{rtp_type:"player"} if predicate nice_actions:entity/is_riding in $(dimension) positioned ~$(posx) ~ ~$(posz) on vehicle run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
+$execute if data storage eden:settings nice_actions{rtp_type:"player"} unless predicate nice_actions:entity/is_riding in $(dimension) positioned ~$(posx) ~ ~$(posz) run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
 
 execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ .5 0.5
 particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100

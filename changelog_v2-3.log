@@ -1,0 +1,8 @@
+## Changes:
+- Minor performance improvements
+- Coordinates Hud Direction is now shown more precise
+- RTP now also teleports the current Mount
+
+## Fixes:
+- Config menu for costs not being executable
+- random "yes" message being displayed when teleporting home with a leashed entity
