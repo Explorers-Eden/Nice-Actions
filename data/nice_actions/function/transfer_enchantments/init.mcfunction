@@ -2,28 +2,28 @@ $execute unless score @s nice_actions.exp_level matches $(transfer_enchantments_
 execute at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 
 execute unless data entity @s equipment.offhand.components{"minecraft:enchantments":{}} run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"Offhand item not enchanted.","italic":false,"translate":"text.nice_actions.transfer_enchantments_failed_offhand_no_enchant"}\
 ]
 
 execute if data entity @s SelectedItem.components{"minecraft:enchantments":{}} run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"Mainhand item already enchanted.","italic":false,"translate":"text.nice_actions.transfer_enchantments_failed_mainhand_has_enchant"}\
 ]
 
 execute unless items entity @s weapon.mainhand * run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"No item in mainhand.","italic":false,"translate":"text.nice_actions.transfer_enchantments_failed_mainhand_no_item"}\
 ]
 
 execute unless items entity @s weapon.offhand * run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"No item in offhand.","italic":false,"translate":"text.nice_actions.transfer_enchantments_failed_offhand_no_item"}\
 ]
 
 execute if items entity @s weapon.mainhand minecraft:book run \
 execute unless items entity @s weapon.mainhand minecraft:book[minecraft:count=1] run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"More than one Book in mainhand.","italic":false,"translate":"text.nice_actions.transfer_enchantments_failed_mainhand_books"}\
 ]
 

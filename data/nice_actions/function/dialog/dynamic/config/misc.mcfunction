@@ -126,6 +126,7 @@ $dialog show @s \
         "translate":"option.nice_actions.rtp_radius",\
         "fallback":"RTP Radius"\
       },\
+      "label_format": "%s: %s Blocks",\
       "start":0,\
       "end":25000,\
       "step":100,\
@@ -163,8 +164,9 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"option.nice_actions.rtp_cooldown",\
-        "fallback":"RTP Cooldown in Seconds"\
+        "fallback":"RTP Cooldown"\
       },\
+      "label_format": "%s: %s Seconds",\
       "start":0,\
       "end":3600,\
       "step":10,\
@@ -176,8 +178,9 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"option.nice_actions.tp_home_cooldown",\
-        "fallback":"TP Home Cooldown in Seconds"\
+        "fallback":"TP Home Cooldown"\
       },\
+      "label_format": "%s: %s Seconds",\
       "start":0,\
       "end":3600,\
       "step":10,\
@@ -189,8 +192,9 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"option.nice_actions.tp_spawn_cooldown",\
-        "fallback":"TP Spawn Cooldown in Seconds"\
+        "fallback":"TP Spawn Cooldown"\
       },\
+      "label_format": "%s: %s Seconds",\
       "start":0,\
       "end":3600,\
       "step":10,\

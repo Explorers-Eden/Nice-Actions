@@ -18,7 +18,7 @@ execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ 
 particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
 
 tellraw @s [\
-{"text":"▊ ","color":"#69FF5E","bold":true,"italic":false},\
+{"text":"▊ ","color":"#69FF5E","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"Teleported back home.","italic":false,"translate":"text.nice_actions.tp_home_successful"}\
 ]
 

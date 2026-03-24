@@ -26,6 +26,7 @@ run tellraw @s [\
 {"bold":false,"color":"dark_gray","italic":false,"text":" | "},\
 {"bold":false,"color":"white","italic":false,"text":"Type: "},{"bold":false,"color":"#FFF382","italic":false,"text":"Desert"}\
 ]
+
 execute if data entity @n[type=villager] VillagerData{profession: "minecraft:cartographer"} \
 run tellraw @s [\
 {"bold":false,"color":"white","italic":false,"text":"• Profession: "},{"bold":false,"color":"gray","italic":false,"text":"Cartographer"},\

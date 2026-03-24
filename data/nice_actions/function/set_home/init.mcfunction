@@ -11,7 +11,7 @@ data remove storage eden:temp player
 
 execute at @s run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 tellraw @s [\
-{"text":"▊ ","color":"#69FF5E","bold":true,"italic":false},\
+{"text":"▊ ","color":"#69FF5E","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"Home successfully set to current position.","italic":false,"translate":"text.nice_actions.set_home_successful"}\
 ]
 

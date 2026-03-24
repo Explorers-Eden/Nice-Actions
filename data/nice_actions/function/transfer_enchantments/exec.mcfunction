@@ -5,7 +5,7 @@ $execute if items entity @s weapon.mainhand book run item replace entity @s weap
 item replace entity @s weapon.offhand with air
 
 tellraw @s [\
-{"text":"▊ ","color":"#69FF5E","bold":true,"italic":false},\
+{"text":"▊ ","color":"#69FF5E","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"Enchantments succesfully transferred.","italic":false,"translate":"text.nice_actions.transfer_enchantments_succes"}\
 ]
 

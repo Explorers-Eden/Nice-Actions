@@ -24,4 +24,4 @@ execute if predicate nice_actions:weather/thunder run data modify storage eden:t
 execute if data storage eden:settings nice_actions{time_format:12} run function nice_actions:calendar/update_bossbar/exec_12 with storage eden:temp huds
 execute if data storage eden:settings nice_actions{time_format:24} run function nice_actions:calendar/update_bossbar/exec_24 with storage eden:temp huds
 
-data remove storage eden:temp huds
+#data remove storage eden:temp huds

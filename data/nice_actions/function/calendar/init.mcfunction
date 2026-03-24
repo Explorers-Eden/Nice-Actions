@@ -1,15 +1,15 @@
 schedule function nice_actions:calendar/init 15t
 
-execute store result score $raw_daytime nice_actions.technical run time query daytime
-execute if score $raw_daytime nice_actions.technical matches 17991..18009 run scoreboard players add $day nice_actions.calendar 1
+execute store result score $raw_daytime nice_actions.technical run time query minecraft:day
 
 function nice_actions:calendar/get_month
 function nice_actions:calendar/get_time
+execute if score $24_hour nice_actions.calendar matches 0 if score $day_had_noon nice_actions.calendar matches 1 run scoreboard players add $day nice_actions.calendar 1
 function nice_actions:calendar/store_dates
 function nice_actions:calendar/get_month_name
 function nice_actions:calendar/get_month_name_short
 function nice_actions:calendar/get_season
-execute if score $raw_daytime nice_actions.technical matches 17991..18009 run function nice_actions:calendar/get_weekday
+execute if score $24_hour nice_actions.calendar matches 0 if score $day_had_noon nice_actions.calendar matches 1 run function nice_actions:calendar/get_weekday
 function nice_actions:calendar/get_weekday_short
 function nice_actions:calendar/get_daypart
 
@@ -21,3 +21,5 @@ execute as @a[scores={nice_actions.has_died_today=1..}] run scoreboard players s
 
 function nice_actions:calendar/players_sleeping/init
 function nice_actions:calendar/update_bossbar/init
+
+execute if score $24_hour nice_actions.calendar matches 0 if score $day_had_noon nice_actions.calendar matches 1 run scoreboard players reset $day_had_noon nice_actions.calendar

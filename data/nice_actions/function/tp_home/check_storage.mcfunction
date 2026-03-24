@@ -1,5 +1,5 @@
 $execute unless data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).home run return run tellraw @s [\
-{"text":"▊ ","color":"#FF4A4A","bold":true,"italic":false},\
+{"text":"▊ ","color":"#FF4A4A","bold":false,"italic":false},\
 {"bold":false,"color":"white","italic":false,"fallback":"No Home set yet.","translate":"text.nice_actions.no_home"}\
 ]
 
