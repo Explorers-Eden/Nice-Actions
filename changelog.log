@@ -1,6 +1,5 @@
 # Minecraft Version(s): 26.1.x
 ## Changes:
-- Added checks to prevent Dates skipping when Time rate was set lower than 1
+- Lang Files are now getting automatically synced with crowdin with new releases
 
 ## Fixes:
-- Fixed Villager Info not working properly

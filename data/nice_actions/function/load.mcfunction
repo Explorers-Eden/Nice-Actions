@@ -141,4 +141,4 @@ execute unless data storage eden:settings nice_actions.time_hud_style_1_initial 
 
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "2.4"
+data modify storage eden:datapack nice_actions.version set value "2.5"
