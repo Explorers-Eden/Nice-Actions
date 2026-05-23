@@ -2,7 +2,7 @@
 set -euo pipefail
 
 PRERELEASE_FLAG=""
-if [ "$IS_PRERELEASE" = "true" ]; then
+if [ "${IS_PRERELEASE}" = "true" ]; then
   PRERELEASE_FLAG="--prerelease"
 fi
 

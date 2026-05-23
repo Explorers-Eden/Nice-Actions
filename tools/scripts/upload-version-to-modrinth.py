@@ -25,18 +25,16 @@ payload = {
     "featured": True,
     "status": "listed",
     "file_parts": ["file"],
-    "primary_file": "file"
-}
-
-headers = {
-    "Authorization": token,
-    "User-Agent": "Explorers-Eden-Nice-Actions-GitHub-Action"
+    "primary_file": "file",
 }
 
 with open(file_name, "rb") as f:
     response = requests.post(
         "https://api.modrinth.com/v2/version",
-        headers=headers,
+        headers={
+            "Authorization": token,
+            "User-Agent": "Explorers-Eden-GitHub-Action",
+        },
         files={
             "data": (None, json.dumps(payload), "application/json"),
             "file": (file_name, f, file_mime_type),
