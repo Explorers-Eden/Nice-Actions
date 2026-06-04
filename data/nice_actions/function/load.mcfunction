@@ -22,6 +22,10 @@ scoreboard objectives add nice_actions.tp_home.timer dummy
 scoreboard objectives add nice_actions.sit dummy
 scoreboard objectives add nice_actions.has_died_today deathCount
 scoreboard objectives add nice_actions.hud.coords dummy
+scoreboard objectives add nice_actions.uuid.0 dummy
+scoreboard objectives add nice_actions.uuid.1 dummy
+scoreboard objectives add nice_actions.uuid.2 dummy
+scoreboard objectives add nice_actions.uuid.3 dummy
 scoreboard objectives add nice_actions.events.participate dummy
 scoreboard objectives add nice_actions.events.counter dummy
 
