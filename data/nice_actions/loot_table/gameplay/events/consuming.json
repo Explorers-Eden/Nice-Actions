@@ -8,9 +8,9 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_golden_apple",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
@@ -23,9 +23,9 @@
           "type": "minecraft:item",
           "name": "minecraft:golden_carrot",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 8,
@@ -38,9 +38,9 @@
           "type": "minecraft:item",
           "name": "minecraft:suspicious_stew",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_stew_effect",
+              "type": "minecraft:set_stew_effect",
               "effects": [
                 {
                   "type": "minecraft:hero_of_the_village",
@@ -49,7 +49,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.nice_actions.hero_of_the_village_stew",
@@ -63,9 +63,9 @@
           "type": "minecraft:item",
           "name": "minecraft:suspicious_stew",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_stew_effect",
+              "type": "minecraft:set_stew_effect",
               "effects": [
                 {
                   "type": "minecraft:dolphins_grace",
@@ -74,7 +74,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.nice_actions.dolphins_grace_stew",
@@ -88,9 +88,9 @@
           "type": "minecraft:item",
           "name": "minecraft:suspicious_stew",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_stew_effect",
+              "type": "minecraft:set_stew_effect",
               "effects": [
                 {
                   "type": "minecraft:fire_resistance",
@@ -99,7 +99,7 @@
               ]
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.nice_actions.fire_resistance_stew",
@@ -113,9 +113,9 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond_hoe",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -129,9 +129,9 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_hoe",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -145,9 +145,9 @@
           "type": "minecraft:item",
           "name": "minecraft:golden_hoe",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -166,9 +166,9 @@
           "type": "minecraft:item",
           "name": "minecraft:pumpkin_pie",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 8,
@@ -181,9 +181,9 @@
           "type": "minecraft:item",
           "name": "minecraft:cookie",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 8,
@@ -196,9 +196,9 @@
           "type": "minecraft:item",
           "name": "minecraft:totem_of_undying",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {

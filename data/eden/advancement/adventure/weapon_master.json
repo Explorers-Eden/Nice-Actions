@@ -1,0 +1,105 @@
+{
+  "parent": "eden:adventure/jack_of_all_trades",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.weapon_master.title",
+      "fallback": "Weapon Master"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.weapon_master.description",
+      "fallback": "Complete the killing daily event with every weapon category."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "swords": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:swords"
+              }
+            }
+          }
+        }
+      }
+    },
+    "axes": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:axes"
+              }
+            }
+          }
+        }
+      }
+    },
+    "bow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:bow"
+              }
+            }
+          }
+        }
+      }
+    },
+    "crossbow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:crossbow"
+              }
+            }
+          }
+        }
+      }
+    },
+    "trident": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:trident"
+              }
+            }
+          }
+        }
+      }
+    },
+    "mace": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:mace"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

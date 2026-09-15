@@ -8,9 +8,9 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond_spear",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -24,9 +24,9 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_spear",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -40,9 +40,9 @@
           "type": "minecraft:item",
           "name": "minecraft:golden_spear",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -56,9 +56,9 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
           "weight": 2,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -72,9 +72,9 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -88,9 +88,9 @@
           "type": "minecraft:item",
           "name": "minecraft:golden_sword",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -104,9 +104,9 @@
           "type": "minecraft:item",
           "name": "minecraft:chainmail_boots",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_randomly",
+              "type": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
             }
           ]
@@ -115,9 +115,9 @@
           "type": "minecraft:item",
           "name": "minecraft:chainmail_leggings",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_randomly",
+              "type": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
             }
           ]
@@ -126,9 +126,9 @@
           "type": "minecraft:item",
           "name": "minecraft:chainmail_chestplate",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_randomly",
+              "type": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
             }
           ]
@@ -137,9 +137,9 @@
           "type": "minecraft:item",
           "name": "minecraft:chainmail_helmet",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_randomly",
+              "type": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
             }
           ]
@@ -153,9 +153,9 @@
           "type": "minecraft:item",
           "name": "minecraft:tnt",
           "weight": 6,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -168,9 +168,9 @@
           "type": "minecraft:item",
           "name": "minecraft:wind_charge",
           "weight": 6,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -183,9 +183,9 @@
           "type": "minecraft:item",
           "name": "minecraft:spectral_arrow",
           "weight": 6,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -198,9 +198,9 @@
           "type": "minecraft:item",
           "name": "minecraft:sculk_catalyst",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
@@ -213,9 +213,9 @@
           "type": "minecraft:item",
           "name": "minecraft:end_crystal",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
@@ -228,9 +228,9 @@
           "type": "minecraft:item",
           "name": "minecraft:anvil",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
@@ -241,17 +241,17 @@
         },
         {
           "type": "minecraft:tag",
-          "name": "nice_actions:templates",
           "expand": true,
-          "weight": 3
+          "weight": 3,
+          "items": "#nice_actions:templates"
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 10,
@@ -269,7 +269,7 @@
           "type": "minecraft:item",
           "name": "minecraft:piglin_head",
           "weight": 3,
-          "functions": []
+          "modifier": []
         },
         {
           "type": "minecraft:item",

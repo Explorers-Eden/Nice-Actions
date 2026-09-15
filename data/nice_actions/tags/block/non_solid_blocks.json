@@ -1,12 +1,11 @@
 {
-    "values": [
-      "minecraft:air",
-      "minecraft:cave_air",
-      "minecraft:water",
-      "minecraft:lava",
-      "minecraft:big_dripleaf",
-      "minecraft:cobweb",
-      "minecraft:powder_snow"
-    ]
-  }
-                  
+  "values": [
+    "minecraft:air",
+    "minecraft:big_dripleaf",
+    "minecraft:cave_air",
+    "minecraft:cobweb",
+    "minecraft:lava",
+    "minecraft:powder_snow",
+    "minecraft:water"
+  ]
+}

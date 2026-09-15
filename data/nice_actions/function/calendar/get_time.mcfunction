@@ -1,19 +1,8 @@
-scoreboard players operation $raw_hours nice_actions.technical = $raw_daytime nice_actions.technical
-scoreboard players operation $raw_hours nice_actions.technical /= $5 nice_actions.technical
-scoreboard players operation $raw_hours nice_actions.technical *= $18 nice_actions.technical
-scoreboard players operation $raw_hours nice_actions.technical /= $60 nice_actions.technical
-scoreboard players operation $raw_minutes nice_actions.technical = $raw_hours nice_actions.technical
-scoreboard players operation $raw_hours nice_actions.technical /= $60 nice_actions.technical
+execute store result score $total_minutes nice_actions.technical run compute default integer nice_actions:calendar/total_minutes
 
-scoreboard players operation $24_hour nice_actions.calendar = $raw_hours nice_actions.technical
-scoreboard players operation $24_hour nice_actions.calendar += $6 nice_actions.technical
+execute store result score $minute nice_actions.calendar run compute default integer nice_actions:calendar/minute
 
-scoreboard players operation $raw_hours nice_actions.technical *= $60 nice_actions.technical
-
-scoreboard players operation $minute nice_actions.calendar = $raw_minutes nice_actions.technical
-scoreboard players operation $minute nice_actions.calendar -= $raw_hours nice_actions.technical
-
-execute if score $24_hour nice_actions.calendar matches 24.. run scoreboard players operation $24_hour nice_actions.calendar -= $24 nice_actions.technical
+execute store result score $24_hour nice_actions.calendar run compute default integer nice_actions:calendar/hour_24
 
 execute if score $24_hour nice_actions.calendar matches 0..11 run data modify storage eden:calendar global.meridiem set value "AM"
 execute if score $24_hour nice_actions.calendar matches 12..23 run data modify storage eden:calendar global.meridiem set value "PM"

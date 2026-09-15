@@ -8,4 +8,6 @@ execute as @a[scores={nice_actions.stats_trigger=34..54}] run function nice_acti
 execute as @a[scores={nice_actions.stats_trigger=55..64}] run function nice_actions:share_stats/check_misc with storage eden:settings nice_actions
 execute as @a[scores={nice_actions.stats_trigger=65..76}] run function nice_actions:share_stats/check_travel with storage eden:settings nice_actions
 
+execute as @a[scores={nice_actions.stats_trigger=1..76}] run advancement grant @s only eden:adventure/comparing_notes
+
 scoreboard players set @a nice_actions.stats_trigger 0

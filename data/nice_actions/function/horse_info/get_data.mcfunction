@@ -6,3 +6,5 @@ data modify storage eden:temp horse_stats.cost set from storage eden:settings ni
 execute store result score $horse_jump nice_actions.technical run data get storage eden:temp horse_stats.jump
 
 function nice_actions:horse_info/display_message with storage eden:temp horse_stats
+
+advancement grant @s only eden:adventure/horse_whisperer

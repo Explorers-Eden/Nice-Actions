@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:round",
+  "input": {
+    "type": "minecraft:div",
+    "left": {
+      "type": "minecraft:from_int",
+      "input": {
+        "type": "minecraft:score",
+        "target": { "type": "minecraft:fixed", "name": "$temp_value_travel_stat" },
+        "score": "nice_actions.technical"
+      }
+    },
+    "right": 100.0
+  }
+}

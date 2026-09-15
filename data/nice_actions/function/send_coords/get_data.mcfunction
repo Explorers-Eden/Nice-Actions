@@ -21,3 +21,5 @@ data modify storage eden:temp send_coords.weekday set from storage eden:calendar
 data modify storage eden:temp send_coords.cost set from storage eden:settings nice_actions.send_coords_cost
 
 function nice_actions:send_coords/display_message with storage eden:temp send_coords
+
+advancement grant @s only eden:adventure/broadcast

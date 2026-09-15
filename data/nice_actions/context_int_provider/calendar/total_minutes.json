@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:floor_div",
+  "left": {
+    "type": "minecraft:mul",
+    "inputs": [
+      {
+        "type": "minecraft:score",
+        "target": { "type": "minecraft:fixed", "name": "$raw_daytime" },
+        "score": "nice_actions.technical"
+      },
+      3
+    ]
+  },
+  "right": 50
+}

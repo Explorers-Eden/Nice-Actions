@@ -4,6 +4,8 @@ execute as @n[type=villager] at @s if data entity @s Brain.memories.minecraft:jo
 effect give @n[type=minecraft:villager] minecraft:glowing 11 0 true
 function nice_actions:villager_info/display_msg
 
+advancement grant @s only eden:adventure/meet_the_neighbors
+
 data remove storage eden:temp villager_data
 
 $experience add @s -$(villager_info_cost) levels

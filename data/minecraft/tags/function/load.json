@@ -1,14 +1,13 @@
 {
-	"values": 
-	[
-	"nice_actions:load",
-	"nice_actions:trigger/main",
-	"nice_actions:trigger/stats",
-	"nice_actions:timer/init",
-	"nice_actions:sit/run",
-	"nice_actions:calendar/init",
-	"nice_actions:coords_hud/update/init",
-	"nice_actions:events/bossbar/init",
-	"nice_actions:events/init"
-	]
+  "values": [
+    "nice_actions:calendar/init",
+    "nice_actions:coords_hud/update/init",
+    "nice_actions:events/bossbar/init",
+    "nice_actions:events/init",
+    "nice_actions:load",
+    "nice_actions:sit/run",
+    "nice_actions:timer/init",
+    "nice_actions:trigger/main",
+    "nice_actions:trigger/stats"
+  ]
 }

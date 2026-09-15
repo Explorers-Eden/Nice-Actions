@@ -25,5 +25,7 @@ tellraw @s [\
 scoreboard players set @s nice_actions.tp_home.cooldown 1
 scoreboard players set @s nice_actions.tp_home.timer 0
 
+advancement grant @s only eden:adventure/home_sweet_home teleported_home
+
 $experience add @s -$(cost) levels
 #$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~

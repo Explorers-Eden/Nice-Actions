@@ -11,4 +11,6 @@ tellraw @s [\
 scoreboard players set @s nice_actions.tp_spawn.cooldown 1
 scoreboard players set @s nice_actions.tp_spawn.timer 0
 
+advancement grant @s only eden:adventure/homeward_bound
+
 $experience add @s -$(tp_spawn_cost) levels

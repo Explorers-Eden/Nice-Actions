@@ -8,9 +8,9 @@
           "type": "minecraft:item",
           "name": "minecraft:blaze_rod",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 16,
@@ -23,9 +23,9 @@
           "type": "minecraft:item",
           "name": "minecraft:breeze_rod",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 16,
@@ -38,9 +38,9 @@
           "type": "minecraft:item",
           "name": "minecraft:experience_bottle",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 16,
@@ -53,9 +53,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -101,9 +101,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -149,9 +149,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -197,9 +197,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -245,9 +245,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -293,9 +293,9 @@
           "type": "minecraft:item",
           "name": "minecraft:honey_bottle",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "minecraft:ominous_bottle",
                 "minecraft:rarity": "rare",
@@ -341,9 +341,9 @@
           "type": "minecraft:item",
           "name": "minecraft:rabbit_foot",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -356,9 +356,9 @@
           "type": "minecraft:item",
           "name": "minecraft:turtle_helmet",
           "weight": 3,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 0,
@@ -371,9 +371,9 @@
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -386,9 +386,9 @@
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,
@@ -401,9 +401,9 @@
           "type": "minecraft:item",
           "name": "minecraft:phantom_membrane",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 4,

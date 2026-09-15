@@ -3,7 +3,9 @@
     "brewed_potion": {
       "trigger": "minecraft:brewed_potion",
       "conditions": {
-        "potion": "minecraft:water_breathing"
+        "potion": {
+          "potion": "minecraft:water_breathing"
+        }
       }
     }
   },

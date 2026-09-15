@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_stairs"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.take_a_seat.title",
+      "fallback": "Take a Seat"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.take_a_seat.description",
+      "fallback": "Sit down for the first time."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

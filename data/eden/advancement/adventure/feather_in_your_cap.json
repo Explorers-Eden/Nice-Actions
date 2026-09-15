@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/enchantment_exchange",
+  "display": {
+    "icon": {
+      "id": "minecraft:feather"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.feather_in_your_cap.title",
+      "fallback": "Feather in Your Cap"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.feather_in_your_cap.description",
+      "fallback": "Equip a feather as a hat."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

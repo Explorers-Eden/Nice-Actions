@@ -3,7 +3,9 @@
     "brewed_potion": {
       "trigger": "minecraft:brewed_potion",
       "conditions": {
-        "potion": "minecraft:infested"
+        "potion": {
+          "potion": "minecraft:infested"
+        }
       }
     }
   },

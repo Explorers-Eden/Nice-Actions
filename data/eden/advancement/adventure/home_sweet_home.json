@@ -1,0 +1,29 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_bed"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.home_sweet_home.title",
+      "fallback": "Home Sweet Home"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.home_sweet_home.description",
+      "fallback": "Set your first home, then teleport to it."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "set_home": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    },
+    "teleported_home": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

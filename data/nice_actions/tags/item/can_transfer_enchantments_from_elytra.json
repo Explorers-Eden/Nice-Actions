@@ -1,6 +1,6 @@
- {
+{
   "values": [
-    "minecraft:elytra",
-    "minecraft:book"
+    "minecraft:book",
+    "minecraft:elytra"
   ]
 }

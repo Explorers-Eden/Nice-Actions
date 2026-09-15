@@ -16,3 +16,5 @@ execute unless data storage eden:settings keepinv{grave_status:"enabled"} run fu
 
 ## Last Grave Location (Nice Keep Inventory)
 execute if data storage eden:settings keepinv{grave_status:"enabled"} run function nice_actions:death_coords/last_grave/init
+
+execute if data entity @s LastDeathLocation run advancement grant @s only eden:adventure/grim_reminder

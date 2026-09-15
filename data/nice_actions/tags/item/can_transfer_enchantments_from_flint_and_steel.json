@@ -1,6 +1,6 @@
- {
+{
   "values": [
-    "minecraft:flint_and_steel",
-    "minecraft:book"
+    "minecraft:book",
+    "minecraft:flint_and_steel"
   ]
 }

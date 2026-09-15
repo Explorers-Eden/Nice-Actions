@@ -4,7 +4,7 @@ execute unless score @s nice_actions.stats.travel.minecart matches 1.. run retur
 ]\
 
 scoreboard players operation $temp_value_travel_stat nice_actions.technical = @s nice_actions.stats.travel.minecart
-execute store result score $travel_msg_output nice_actions.technical run scoreboard players operation $temp_value_travel_stat nice_actions.technical /= $100 nice_actions.technical
+execute store result score $travel_msg_output nice_actions.technical run compute default float nice_actions:share_stats/travel_blocks 1
 
 execute at @a[distance=..32] run playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .6 2
 

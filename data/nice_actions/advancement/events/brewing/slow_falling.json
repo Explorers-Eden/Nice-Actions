@@ -3,7 +3,9 @@
     "brewed_potion": {
       "trigger": "minecraft:brewed_potion",
       "conditions": {
-        "potion": "minecraft:slow_falling"
+        "potion": {
+          "potion": "minecraft:slow_falling"
+        }
       }
     }
   },

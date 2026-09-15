@@ -1,0 +1,747 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:experience_bottle"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.jack_of_all_trades.title",
+      "fallback": "Jack of All Trades"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.jack_of_all_trades.description",
+      "fallback": "Complete at least one daily event from each category."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "fish_cod": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": "minecraft:cod"
+        }
+      }
+    },
+    "fish_salmon": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": "minecraft:salmon"
+        }
+      }
+    },
+    "fish_pufferfish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": "minecraft:pufferfish"
+        }
+      }
+    },
+    "fish_tropical_fish": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "item": {
+          "items": "minecraft:tropical_fish"
+        }
+      }
+    },
+    "kill_swords": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:swords"
+              }
+            }
+          }
+        }
+      }
+    },
+    "kill_axes": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "#minecraft:axes"
+              }
+            }
+          }
+        }
+      }
+    },
+    "kill_bow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:bow"
+              }
+            }
+          }
+        }
+      }
+    },
+    "kill_crossbow": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:crossbow"
+              }
+            }
+          }
+        }
+      }
+    },
+    "kill_trident": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:trident"
+              }
+            }
+          }
+        }
+      }
+    },
+    "kill_mace": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "source_entity": {
+            "equipment": {
+              "mainhand": {
+                "items": "minecraft:mace"
+              }
+            }
+          }
+        }
+      }
+    },
+    "brew_swiftness": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:swiftness"
+        }
+      }
+    },
+    "brew_infested": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:infested"
+        }
+      }
+    },
+    "brew_slowness": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:slowness"
+        }
+      }
+    },
+    "brew_fire_resistance": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:fire_resistance"
+        }
+      }
+    },
+    "brew_harming": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:harming"
+        }
+      }
+    },
+    "brew_wind_charged": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:wind_charged"
+        }
+      }
+    },
+    "brew_leaping": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:leaping"
+        }
+      }
+    },
+    "brew_water_breathing": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:water_breathing"
+        }
+      }
+    },
+    "brew_weakness": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:weakness"
+        }
+      }
+    },
+    "brew_regeneration": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:regeneration"
+        }
+      }
+    },
+    "brew_night_vision": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:night_vision"
+        }
+      }
+    },
+    "brew_strength": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:strength"
+        }
+      }
+    },
+    "brew_turtle_master": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:turtle_master"
+        }
+      }
+    },
+    "brew_weaving": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:weaving"
+        }
+      }
+    },
+    "brew_oozing": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:oozing"
+        }
+      }
+    },
+    "brew_healing": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:healing"
+        }
+      }
+    },
+    "brew_poison": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:poison"
+        }
+      }
+    },
+    "brew_invisibility": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:invisibility"
+        }
+      }
+    },
+    "brew_slow_falling": {
+      "trigger": "minecraft:brewed_potion",
+      "conditions": {
+        "potion": {
+          "potion": "minecraft:slow_falling"
+        }
+      }
+    },
+    "eat_golden_carrot": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_carrot"
+        }
+      }
+    },
+    "eat_mushroom_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:mushroom_stew"
+        }
+      }
+    },
+    "eat_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:cookie"
+        }
+      }
+    },
+    "eat_sweet_berries": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:sweet_berries"
+        }
+      }
+    },
+    "eat_melon_slice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:melon_slice"
+        }
+      }
+    },
+    "eat_beetroot_soup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:beetroot_soup"
+        }
+      }
+    },
+    "eat_dried_kelp": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:dried_kelp"
+        }
+      }
+    },
+    "eat_milk_bucket": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:milk_bucket"
+        }
+      }
+    },
+    "eat_poisonous_potato": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato"
+        }
+      }
+    },
+    "eat_chorus_fruit": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:chorus_fruit"
+        }
+      }
+    },
+    "eat_pumpkin_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:pumpkin_pie"
+        }
+      }
+    },
+    "eat_spider_eye": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:spider_eye"
+        }
+      }
+    },
+    "eat_bread": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bread"
+        }
+      }
+    },
+    "eat_golden_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:golden_apple"
+        }
+      }
+    },
+    "eat_rotten_flesh": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:rotten_flesh"
+        }
+      }
+    },
+    "eat_rabbit_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:rabbit_stew"
+        }
+      }
+    },
+    "breed_goat": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:goat"
+          }
+        }
+      }
+    },
+    "breed_pig": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:pig"
+          }
+        }
+      }
+    },
+    "breed_panda": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:panda"
+          }
+        }
+      }
+    },
+    "breed_chicken": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:chicken"
+          }
+        }
+      }
+    },
+    "breed_axolotl": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:axolotl"
+          }
+        }
+      }
+    },
+    "breed_sniffer": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:sniffer"
+          }
+        }
+      }
+    },
+    "breed_ocelot": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:ocelot"
+          }
+        }
+      }
+    },
+    "breed_wolf": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wolf"
+          }
+        }
+      }
+    },
+    "breed_fox": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:fox"
+          }
+        }
+      }
+    },
+    "breed_llama": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:llama"
+          }
+        }
+      }
+    },
+    "breed_cat": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:cat"
+          }
+        }
+      }
+    },
+    "breed_cow": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:cow"
+          }
+        }
+      }
+    },
+    "breed_bee": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:bee"
+          }
+        }
+      }
+    },
+    "breed_frog": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:frog"
+          }
+        }
+      }
+    },
+    "breed_sheep": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:sheep"
+          }
+        }
+      }
+    },
+    "breed_camel": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:camel"
+          }
+        }
+      }
+    },
+    "breed_armadillo": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:armadillo"
+          }
+        }
+      }
+    },
+    "breed_turtle": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:turtle"
+          }
+        }
+      }
+    },
+    "breed_strider": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:strider"
+          }
+        }
+      }
+    },
+    "breed_mooshroom": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:mooshroom"
+          }
+        }
+      }
+    },
+    "breed_rabbit": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:rabbit"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fish_cod",
+      "fish_salmon",
+      "fish_pufferfish",
+      "fish_tropical_fish"
+    ],
+    [
+      "kill_swords",
+      "kill_axes",
+      "kill_bow",
+      "kill_crossbow",
+      "kill_trident",
+      "kill_mace"
+    ],
+    [
+      "brew_swiftness",
+      "brew_infested",
+      "brew_slowness",
+      "brew_fire_resistance",
+      "brew_harming",
+      "brew_wind_charged",
+      "brew_leaping",
+      "brew_water_breathing",
+      "brew_weakness",
+      "brew_regeneration",
+      "brew_night_vision",
+      "brew_strength",
+      "brew_turtle_master",
+      "brew_weaving",
+      "brew_oozing",
+      "brew_healing",
+      "brew_poison",
+      "brew_invisibility",
+      "brew_slow_falling"
+    ],
+    [
+      "eat_golden_carrot",
+      "eat_mushroom_stew",
+      "eat_cookie",
+      "eat_sweet_berries",
+      "eat_melon_slice",
+      "eat_beetroot_soup",
+      "eat_dried_kelp",
+      "eat_milk_bucket",
+      "eat_poisonous_potato",
+      "eat_chorus_fruit",
+      "eat_pumpkin_pie",
+      "eat_spider_eye",
+      "eat_bread",
+      "eat_golden_apple",
+      "eat_rotten_flesh",
+      "eat_rabbit_stew"
+    ],
+    [
+      "breed_goat",
+      "breed_pig",
+      "breed_panda",
+      "breed_chicken",
+      "breed_axolotl",
+      "breed_sniffer",
+      "breed_ocelot",
+      "breed_wolf",
+      "breed_fox",
+      "breed_llama",
+      "breed_cat",
+      "breed_cow",
+      "breed_bee",
+      "breed_frog",
+      "breed_sheep",
+      "breed_camel",
+      "breed_armadillo",
+      "breed_turtle",
+      "breed_strider",
+      "breed_mooshroom",
+      "breed_rabbit"
+    ]
+  ]
+}

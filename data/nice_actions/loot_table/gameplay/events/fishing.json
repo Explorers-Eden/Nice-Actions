@@ -8,9 +8,9 @@
           "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 5,
@@ -29,9 +29,9 @@
           "type": "minecraft:item",
           "name": "minecraft:dark_prismarine",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 32,
@@ -44,9 +44,9 @@
           "type": "minecraft:item",
           "name": "minecraft:prismarine",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 32,
@@ -59,9 +59,9 @@
           "type": "minecraft:item",
           "name": "minecraft:prismarine_bricks",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 32,
@@ -74,9 +74,9 @@
           "type": "minecraft:item",
           "name": "minecraft:sea_lantern",
           "weight": 10,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 32,
@@ -89,9 +89,9 @@
           "type": "minecraft:item",
           "name": "minecraft:trident",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "type": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
                 "min": 1,
@@ -110,14 +110,13 @@
           "type": "minecraft:item",
           "name": "minecraft:chest",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_loot_table",
-              "type": "minecraft:chest",
-              "name": "minecraft:chests/buried_treasure"
+              "type": "minecraft:set_loot_table",
+              "loot_table_id": "minecraft:chests/buried_treasure"
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
@@ -132,14 +131,13 @@
           "type": "minecraft:item",
           "name": "minecraft:chest",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_loot_table",
-              "type": "minecraft:chest",
-              "name": "minecraft:chests/shipwreck_treasure"
+              "type": "minecraft:set_loot_table",
+              "loot_table_id": "minecraft:chests/shipwreck_treasure"
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:rarity": "rare",
                 "minecraft:item_name": {
@@ -154,9 +152,9 @@
           "type": "minecraft:item",
           "name": "minecraft:fishing_rod",
           "weight": 7,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchant_randomly",
+              "type": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot",
               "only_compatible": true
             }

@@ -11,10 +11,10 @@ execute if data storage eden:settings nice_actions{time_hud_style:2} run data mo
 execute if data storage eden:settings nice_actions{time_hud_style:3} run data modify storage eden:settings nice_actions merge value {time_hud_style_1_initial:"false",time_hud_style_2_initial:"false",time_hud_style_3_initial:"true",time_hud_style_4_initial:"false"}
 execute if data storage eden:settings nice_actions{time_hud_style:4} run data modify storage eden:settings nice_actions merge value {time_hud_style_1_initial:"false",time_hud_style_2_initial:"false",time_hud_style_3_initial:"false",time_hud_style_4_initial:"true"}
 
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"range":{"min":$(rtp_height_max)}} \
+$execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"test":{"min":$(rtp_height_max)}} \
 run scoreboard players set $temp_height nice_actions.technical $(rtp_height_max)
 
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"range":{"min":$(rtp_height_max)}} \
+$execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:constant","value":$(rtp_height_min)},"test":{"min":$(rtp_height_max)}} \
 store result storage eden:settings nice_actions.rtp_height_min int 1 \
 run scoreboard players operation $temp_height nice_actions.technical -= $1 nice_actions.technical
 

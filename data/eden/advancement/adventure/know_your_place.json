@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:filled_map"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.know_your_place.title",
+      "fallback": "Know Your Place"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.know_your_place.description",
+      "fallback": "Open the coordinates HUD for the first time."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

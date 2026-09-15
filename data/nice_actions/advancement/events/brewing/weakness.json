@@ -3,7 +3,9 @@
     "brewed_potion": {
       "trigger": "minecraft:brewed_potion",
       "conditions": {
-        "potion": "minecraft:weakness"
+        "potion": {
+          "potion": "minecraft:weakness"
+        }
       }
     }
   },

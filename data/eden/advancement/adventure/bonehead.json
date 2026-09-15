@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/enchantment_exchange",
+  "display": {
+    "icon": {
+      "id": "minecraft:bone"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.bonehead.title",
+      "fallback": "Bonehead"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.bonehead.description",
+      "fallback": "Equip a bone as a hat."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

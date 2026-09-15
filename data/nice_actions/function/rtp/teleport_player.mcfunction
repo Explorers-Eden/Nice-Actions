@@ -15,6 +15,8 @@ tellraw @s [\
 scoreboard players set @s nice_actions.rtp.cooldown 1
 scoreboard players set @s nice_actions.rtp.timer 0
 
+advancement grant @s only eden:adventure/random_wanderer
+
 $experience add @s -$(cost) levels
 
 data remove storage eden:temp rtp

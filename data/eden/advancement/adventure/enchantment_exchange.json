@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.enchantment_exchange.title",
+      "fallback": "Enchantment Exchange"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.enchantment_exchange.description",
+      "fallback": "Use the Transfer Enchantments feature to move an enchantment between items."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:floor_mod",
+  "left": {
+    "type": "minecraft:add",
+    "inputs": [
+      {
+        "type": "minecraft:floor_div",
+        "left": {
+          "type": "minecraft:score",
+          "target": { "type": "minecraft:fixed", "name": "$total_minutes" },
+          "score": "nice_actions.technical"
+        },
+        "right": 60
+      },
+      6
+    ]
+  },
+  "right": 24
+}

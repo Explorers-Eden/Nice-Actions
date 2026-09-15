@@ -1,0 +1,25 @@
+{
+  "parent": "eden:adventure/nice_actions",
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.random_wanderer.title",
+      "fallback": "Random Wanderer"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.random_wanderer.description",
+      "fallback": "Use Random Teleport for the first time."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

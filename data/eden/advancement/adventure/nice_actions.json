@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:book"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_actions.chapter.title",
+      "fallback": "Menu Master"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_actions.chapter.description",
+      "fallback": "Open the Nice Actions menu for the first time."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "eden:adventure/root",
+  "criteria": {
+    "granted": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

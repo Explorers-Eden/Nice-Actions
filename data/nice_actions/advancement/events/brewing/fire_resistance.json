@@ -3,7 +3,9 @@
     "brewed_potion": {
       "trigger": "minecraft:brewed_potion",
       "conditions": {
-        "potion": "minecraft:fire_resistance"
+        "potion": {
+          "potion": "minecraft:fire_resistance"
+        }
       }
     }
   },
