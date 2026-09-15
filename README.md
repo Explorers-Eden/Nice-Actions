@@ -1,6 +1,3 @@
-<img src="https://explorerseden.eu/images/nice_actions_title.png" alt="header" width=100%>
-<br><br>
-
 ## 📖 Description
 **Nice Actions** is a lightweight and user-friendly Minecraft data pack that introduces an in-game menu (opened with the new hotkey - default **G**) for players to perform useful actions like teleporting, sitting, managing their home, toggling HUD elements, and sharing stats - all without typing commands. Admins and operators can easily configure features directly in-game, making setup and management quick and intuitive.
 
