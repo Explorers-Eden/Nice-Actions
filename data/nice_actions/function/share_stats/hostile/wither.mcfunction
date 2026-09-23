@@ -11,7 +11,7 @@ tellraw @a[distance=..32] [\
 {"bold":false,"color":"white","fallback":" has killed ","italic":false,"translate":"text.nice_actions.share_stats_prefix_kill"},\
 {"bold":true,"color":"white","italic":false,"score":{"name":"@s","objective":"nice_actions.stats.killed.wither"}},\
 {"text":" ","color":"#89CFF0","bold":false,"italic":false},\
-{"bold":false,"color":"white","italic":false,"translate":"entity.minecraft.wither"},\
+{"bold":false,"color":"white","fallback":"Wither","italic":false,"translate":"entity.minecraft.wither"},\
 {"text":".","color":"white","bold":false,"italic":false}\
 ]\
 

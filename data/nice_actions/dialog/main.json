@@ -12,7 +12,7 @@
   "pause": false,
   "exit_action": {
     "label": {
-      "translate": "mco.selectServer.close"
+      "translate": "option.nice_actions.close"
     }
   },
   "columns": 2,

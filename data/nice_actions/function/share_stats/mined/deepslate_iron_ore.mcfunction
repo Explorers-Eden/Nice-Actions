@@ -11,7 +11,7 @@ tellraw @a[distance=..32] [\
 {"bold":false,"color":"white","fallback":" has mined ","italic":false,"translate":"text.nice_actions.share_stats_prefix_mined"},\
 {"bold":true,"color":"white","italic":false,"score":{"name":"@s","objective":"nice_actions.stats.mined.deepslate_iron_ore"}},\
 {"text":" ","color":"#89CFF0","bold":false,"italic":false},\
-{"bold":false,"color":"white","italic":false,"translate":"block.minecraft.deepslate_iron_ore"},\
+{"bold":false,"color":"white","fallback":"Deepslate Iron Ore","italic":false,"translate":"block.minecraft.deepslate_iron_ore"},\
 {"text":" ","color":"#89CFF0","bold":false,"italic":false},\
 {"bold":false,"color":"white","fallback":"blocks","italic":false,"translate":"text.nice_actions.blocks"},\
 {"text":".","color":"white","bold":false,"italic":false}\
