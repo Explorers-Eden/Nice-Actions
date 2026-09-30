@@ -1,3 +1,5 @@
+function nice_actions:back/save_origin
+
 $execute if data storage eden:settings nice_actions{rtp_type:"spawn"} if predicate nice_actions:entity/is_riding in $(dimension) positioned $(posx) $(posy) $(posz) on vehicle run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
 $execute if data storage eden:settings nice_actions{rtp_type:"spawn"} unless predicate nice_actions:entity/is_riding in $(dimension) positioned $(posx) $(posy) $(posz) run spreadplayers ~ ~ 128 128 under $(ylimit) false @s
 

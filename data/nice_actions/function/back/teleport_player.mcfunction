@@ -1,7 +1,3 @@
-function nice_actions:back/save_origin
-
-#$execute in $(dimension) positioned $(x) $(y) $(z) run forceload add ~ ~
-
 $execute as @e[type=!player,distance=..24] \
     if data entity @s leash{UUID:$(uuid)} \
     in $(dimension) \
@@ -21,13 +17,10 @@ particle minecraft:reverse_portal ~ ~.5 ~ .3 .7 .3 0 100
 
 tellraw @s [\
 {"text":"▊ ","color":"#69FF5E","bold":false,"italic":false},\
-{"bold":false,"color":"white","fallback":"Teleported back home.","italic":false,"translate":"text.nice_actions.tp_home_successful"}\
+{"bold":false,"color":"white","fallback":"Teleported back.","italic":false,"translate":"text.nice_actions.back_successful"}\
 ]
 
-scoreboard players set @s nice_actions.tp_home.cooldown 1
-scoreboard players set @s nice_actions.tp_home.timer 0
-
-advancement grant @s only eden:adventure/home_sweet_home teleported_home
+scoreboard players set @s nice_actions.back.cooldown 1
+scoreboard players set @s nice_actions.back.timer 0
 
 $experience add @s -$(cost) levels
-#$execute in $(dimension) positioned $(x) $(y) $(z) run forceload remove ~ ~

@@ -199,6 +199,34 @@ $dialog show @s \
       "end":3600,\
       "step":10,\
       "initial":$(tp_spawn_cooldown)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"back_cooldown",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.back_cooldown",\
+        "fallback":"TP Back Cooldown"\
+      },\
+      "label_format": "%s: %s Seconds",\
+      "start":0,\
+      "end":3600,\
+      "step":10,\
+      "initial":$(back_cooldown)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"warmup",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.warmup",\
+        "fallback":"Teleport Warm-Up"\
+      },\
+      "label_format": "%s: %s Seconds",\
+      "start":0,\
+      "end":10,\
+      "step":1,\
+      "initial":$(warmup)\
     }\
   ],\
   "can_close_with_escape":true,\

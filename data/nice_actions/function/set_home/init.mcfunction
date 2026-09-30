@@ -5,6 +5,8 @@ data modify storage eden:temp player.uuid_1 set from entity @s UUID[1]
 data modify storage eden:temp player.uuid_2 set from entity @s UUID[2]
 data modify storage eden:temp player.uuid_3 set from entity @s UUID[3]
 
+execute unless entity @s[tag=nice_actions.set_home.confirmed] if function nice_actions:set_home/check_existing run return run data remove storage eden:temp player
+
 execute at @s run function nice_actions:set_home/save_home with storage eden:temp player
 
 data remove storage eden:temp player

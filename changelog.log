@@ -1,5 +1,10 @@
 # Minecraft Version(s): 26.3
 ## Changes:
+- Added "Teleport Back" action returning players to where they were before their last random, spawn or home teleport (configurable cost & cooldown)
+- Added a configurable teleport warm-up for random, spawn, home & back teleports (cancelled when moving, taking damage or disconnecting)
+- Setting a home now asks for confirmation when a home is already set
+- Coordinates HUD now also shows the light level at a players position
+- Event leaderboard with the top 3 players shown to event participants when an event ends
 
 ## Fixes:
 - Some statistic messages not working

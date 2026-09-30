@@ -1,3 +1,5 @@
+function nice_actions:back/save_origin
+
 $execute in $(spawn_dimension) run teleport $(spawn_x) $(spawn_y) $(spawn_z)
 
 execute at @s run playsound minecraft:entity.enderman.teleport neutral @a ~ ~ ~ .5 0.5

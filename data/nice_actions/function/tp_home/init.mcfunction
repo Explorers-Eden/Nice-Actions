@@ -1,3 +1,5 @@
+execute if entity @s[tag=nice_actions.warmup.active] run return fail
+
 scoreboard players add @s nice_actions.tp_home.cooldown 0
 
 $execute unless score @s nice_actions.exp_level matches $(tp_home_cost).. run return run function nice_actions:tp_home/insufficient_level

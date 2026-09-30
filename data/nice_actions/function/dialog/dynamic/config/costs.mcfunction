@@ -125,6 +125,19 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:number_range",\
+      "key":"back_cost",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.back",\
+        "fallback":"Teleport Back"\
+      },\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(back_cost)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
       "key":"villager_info_cost",\
       "width": 256,\
       "label":{\

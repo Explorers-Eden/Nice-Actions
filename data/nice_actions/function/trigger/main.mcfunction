@@ -1,6 +1,11 @@
 schedule function nice_actions:trigger/main 10t
 
 scoreboard players enable @a nice_actions.dialog_trigger
+
+#cancel teleport warm-ups of players who disconnected during them
+execute as @a[tag=nice_actions.warmup.active,scores={nice_actions.warmup.left=1..}] run function nice_actions:warmup/clear
+scoreboard players reset @a[scores={nice_actions.warmup.left=1..}] nice_actions.warmup.left
+
 execute as @a store result score @s nice_actions.exp_level run experience query @s levels
 execute as @e[type=block_display,tag=job_site] at @s unless entity @e[type=area_effect_cloud,distance=..0.1] run kill @s
 
@@ -18,7 +23,9 @@ execute as @a[scores={nice_actions.dialog_trigger=11}] run function nice_actions
 execute as @a[scores={nice_actions.dialog_trigger=12}] run function nice_actions:horse_info/init with storage eden:settings nice_actions
 execute as @a[scores={nice_actions.dialog_trigger=13}] run function nice_actions:event_participation/init
 execute as @a[scores={nice_actions.dialog_trigger=14}] run function nice_actions:transfer_enchantments/init with storage eden:settings nice_actions
+execute as @a[scores={nice_actions.dialog_trigger=15}] run function nice_actions:back/init with storage eden:settings nice_actions
+execute as @a[scores={nice_actions.dialog_trigger=16}] run function nice_actions:set_home/confirmed
 
-execute as @a[scores={nice_actions.dialog_trigger=1..14}] run advancement grant @s only eden:adventure/nice_actions
+execute as @a[scores={nice_actions.dialog_trigger=1..15}] run advancement grant @s only eden:adventure/nice_actions
 
 scoreboard players set @a nice_actions.dialog_trigger 0

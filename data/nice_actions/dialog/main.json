@@ -103,6 +103,20 @@
     },
     {
       "label": {
+        "translate": "option.nice_actions.back",
+        "fallback": "Teleport Back"
+      },
+      "tooltip": {
+        "translate": "option.nice_actions.back.tooltip",
+        "fallback": "Return to where you were before your last random, spawn or home teleport."
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger nice_actions.dialog_trigger set 15"
+      }
+    },
+    {
+      "label": {
         "translate": "option.nice_actions.sit",
         "fallback": "Sit Down"
       },

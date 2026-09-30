@@ -17,6 +17,8 @@ rtp_height_max:128,\
 rtp_cooldown:600,\
 tp_home_cooldown:180,\
 tp_spawn_cooldown:180,\
+back_cooldown:180,\
+warmup:3,\
 rtp_cost:30,\
 sit_cost:0,\
 equip_hat_cost:0,\
@@ -25,6 +27,7 @@ send_coords_cost:0,\
 death_coords_cost:5,\
 set_home_cost:1,\
 tp_home_cost:3,\
+back_cost:3,\
 villager_info_cost:1,\
 horse_info_cost:1,\
 share_stats_cost:1,\
@@ -92,8 +95,8 @@ share_stats_cost:1,\
 }
 
 data modify storage eden:settings nice_actions merge value {\
-    command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost)}",\
-    command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}",\
+    command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost),back_cost:$(back_cost)}",\
+    command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown),back_cooldown:$(back_cooldown),warmup:$(warmup)}",\
         events:{\
             misc:{\
                 command_template:"function nice_actions:dialog/command_template/config/events_misc {monday:$(monday),tuesday:$(tuesday),wednesday:$(wednesday),thursday:$(thursday),friday:$(friday),saturday:$(saturday),sunday:$(sunday),event_msg:$(event_msg)}"\

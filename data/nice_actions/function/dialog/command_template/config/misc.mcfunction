@@ -1,4 +1,4 @@
-$data modify storage eden:settings nice_actions merge value {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}
+$data modify storage eden:settings nice_actions merge value {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown),back_cooldown:$(back_cooldown),warmup:$(warmup)}
 
 execute if data storage eden:settings nice_actions{time_format:12} run data modify storage eden:settings nice_actions.time_format_initial set value "false"
 execute if data storage eden:settings nice_actions{time_format:24} run data modify storage eden:settings nice_actions.time_format_initial set value "true"

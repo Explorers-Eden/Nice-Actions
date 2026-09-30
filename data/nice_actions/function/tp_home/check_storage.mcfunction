@@ -3,6 +3,8 @@ $execute unless data storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(u
 {"bold":false,"color":"white","italic":false,"fallback":"No Home set yet.","translate":"text.nice_actions.no_home"}\
 ]
 
+execute if entity @s[tag=!nice_actions.warmup.done] run return run function nice_actions:warmup/start {action:6}
+
 data modify storage eden:temp player.cost set from storage eden:settings nice_actions.tp_home_cost
 data modify storage eden:temp player.uuid set from entity @s UUID
 $data modify storage eden:temp player.x set from storage eden:database player.$(uuid_0)$(uuid_1)$(uuid_2)$(uuid_3).home.x

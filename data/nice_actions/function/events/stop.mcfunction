@@ -1,3 +1,5 @@
+function nice_actions:events/leaderboard/init
+
 scoreboard objectives remove nice_actions.events.counter
 scoreboard objectives add nice_actions.events.counter dummy
 

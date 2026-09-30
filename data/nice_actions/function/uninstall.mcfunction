@@ -15,6 +15,15 @@ scoreboard objectives remove nice_actions.tp_spawn.cooldown
 scoreboard objectives remove nice_actions.tp_spawn.timer
 scoreboard objectives remove nice_actions.tp_home.cooldown
 scoreboard objectives remove nice_actions.tp_home.timer
+scoreboard objectives remove nice_actions.back.cooldown
+scoreboard objectives remove nice_actions.back.timer
+scoreboard objectives remove nice_actions.warmup.ticks
+scoreboard objectives remove nice_actions.warmup.action
+scoreboard objectives remove nice_actions.warmup.x
+scoreboard objectives remove nice_actions.warmup.y
+scoreboard objectives remove nice_actions.warmup.z
+scoreboard objectives remove nice_actions.warmup.damage
+scoreboard objectives remove nice_actions.warmup.left
 scoreboard objectives remove nice_actions.sit
 scoreboard objectives remove nice_actions.has_died_today
 scoreboard objectives remove nice_actions.hud.coords

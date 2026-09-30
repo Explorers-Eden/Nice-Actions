@@ -19,6 +19,15 @@ scoreboard objectives add nice_actions.tp_spawn.cooldown dummy
 scoreboard objectives add nice_actions.tp_spawn.timer dummy
 scoreboard objectives add nice_actions.tp_home.cooldown dummy
 scoreboard objectives add nice_actions.tp_home.timer dummy
+scoreboard objectives add nice_actions.back.cooldown dummy
+scoreboard objectives add nice_actions.back.timer dummy
+scoreboard objectives add nice_actions.warmup.ticks dummy
+scoreboard objectives add nice_actions.warmup.action dummy
+scoreboard objectives add nice_actions.warmup.x dummy
+scoreboard objectives add nice_actions.warmup.y dummy
+scoreboard objectives add nice_actions.warmup.z dummy
+scoreboard objectives add nice_actions.warmup.damage minecraft.custom:minecraft.damage_taken
+scoreboard objectives add nice_actions.warmup.left minecraft.custom:minecraft.leave_game
 scoreboard objectives add nice_actions.sit dummy
 scoreboard objectives add nice_actions.has_died_today deathCount
 scoreboard objectives add nice_actions.hud.coords dummy
@@ -46,6 +55,7 @@ scoreboard players set $5 nice_actions.technical 5
 scoreboard players set $6 nice_actions.technical 6
 scoreboard players set $12 nice_actions.technical 12
 scoreboard players set $18 nice_actions.technical 18
+scoreboard players set $20 nice_actions.technical 20
 scoreboard players set $24 nice_actions.technical 24
 scoreboard players set $60 nice_actions.technical 60
 scoreboard players set $100 nice_actions.technical 100
@@ -143,6 +153,11 @@ execute unless data storage eden:settings nice_actions.transfer_enchantments_cos
 execute unless data storage eden:settings nice_actions.rtp_type run data modify storage eden:settings nice_actions merge value {rtp_type:"spawn",rtp_type_initial:"true",command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
 execute unless data storage eden:settings nice_actions.time_hud_style_1_initial run data modify storage eden:settings nice_actions merge value {time_hud_style:1,time_hud_style_1_initial:"true",time_hud_style_2_initial:"false",time_hud_style_3_initial:"false",time_hud_style_4_initial:"false",command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown)}"}
 
+execute unless data storage eden:settings nice_actions.warmup run data modify storage eden:settings nice_actions merge value {warmup:3,back_cost:3,back_cooldown:180,command_template_costs:"function nice_actions:dialog/command_template/config/costs {transfer_enchantments_cost:$(transfer_enchantments_cost),rtp_cost:$(rtp_cost),sit_cost:$(sit_cost),equip_hat_cost:$(equip_hat_cost),tp_spawn_cost:$(tp_spawn_cost),send_coords_cost:$(send_coords_cost),death_coords_cost:$(death_coords_cost),set_home_cost:$(set_home_cost),tp_home_cost:$(tp_home_cost),villager_info_cost:$(villager_info_cost),horse_info_cost:$(horse_info_cost),share_stats_cost:$(share_stats_cost),back_cost:$(back_cost)}",command_template_misc:"function nice_actions:dialog/command_template/config/misc {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown),back_cooldown:$(back_cooldown),warmup:$(warmup)}"}
+
+##cancel teleport warm-ups interrupted by a reload
+execute as @a[tag=nice_actions.warmup.active] run function nice_actions:warmup/clear
+tag @a remove nice_actions.warmup.done
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "2.7"
+data modify storage eden:datapack nice_actions.version set value "2.8"
