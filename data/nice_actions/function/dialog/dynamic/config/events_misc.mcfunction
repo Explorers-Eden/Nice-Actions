@@ -276,7 +276,7 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back",\
+      "translate":"option.nice_actions.back",\
       "fallback":"Back"\
     },\
     "action":{\

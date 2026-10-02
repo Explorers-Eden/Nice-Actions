@@ -103,11 +103,11 @@
     },
     {
       "label": {
-        "translate": "option.nice_actions.back",
+        "translate": "option.nice_actions.teleport_back",
         "fallback": "Teleport Back"
       },
       "tooltip": {
-        "translate": "option.nice_actions.back.tooltip",
+        "translate": "option.nice_actions.teleport_back.tooltip",
         "fallback": "Return to where you were before your last random, spawn or home teleport."
       },
       "action": {

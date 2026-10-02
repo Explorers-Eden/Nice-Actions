@@ -128,7 +128,7 @@ $dialog show @s \
       "key":"back_cost",\
       "width": 256,\
       "label":{\
-        "translate":"option.nice_actions.back",\
+        "translate":"option.nice_actions.teleport_back",\
         "fallback":"Teleport Back"\
       },\
       "start":0,\
@@ -212,7 +212,7 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back",\
+      "translate":"option.nice_actions.back",\
       "fallback":"Back"\
     },\
     "action":{\

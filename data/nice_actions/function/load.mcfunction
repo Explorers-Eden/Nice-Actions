@@ -160,4 +160,4 @@ execute as @a[tag=nice_actions.warmup.active] run function nice_actions:warmup/c
 tag @a remove nice_actions.warmup.done
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "2.8"
+data modify storage eden:datapack nice_actions.version set value "2.9"
