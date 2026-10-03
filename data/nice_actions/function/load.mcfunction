@@ -159,5 +159,8 @@ execute unless data storage eden:settings nice_actions.warmup run data modify st
 execute as @a[tag=nice_actions.warmup.active] run function nice_actions:warmup/clear
 tag @a remove nice_actions.warmup.done
 
+##start repeating loops
+function nice_actions:start
+
 ##set data pack version
 data modify storage eden:datapack nice_actions.version set value "2.9"

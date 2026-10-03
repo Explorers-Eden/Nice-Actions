@@ -3,15 +3,16 @@ execute store result storage eden:temp huds.uuid_1 int 1 run scoreboard players 
 execute store result storage eden:temp huds.uuid_2 int 1 run scoreboard players get @s nice_actions.uuid.2
 execute store result storage eden:temp huds.uuid_3 int 1 run scoreboard players get @s nice_actions.uuid.3
 
-execute store result storage eden:temp huds.posx int 1 run data get entity @s Pos[0]
-execute store result storage eden:temp huds.posy int 1 run data get entity @s Pos[1]
-execute store result storage eden:temp huds.posz int 1 run data get entity @s Pos[2]
+data modify storage eden:temp huds.pos set from entity @s Pos
+execute store result storage eden:temp huds.posx int 1 run data get storage eden:temp huds.pos[0]
+execute store result storage eden:temp huds.posy int 1 run data get storage eden:temp huds.pos[1]
+execute store result storage eden:temp huds.posz int 1 run data get storage eden:temp huds.pos[2]
 
 data modify storage eden:temp huds.color set value "white"
-execute if data entity @s {Dimension:"minecraft:overworld"} run data modify storage eden:temp huds.color set value "green"
-execute if data entity @s {Dimension:"minecraft:the_nether"} run data modify storage eden:temp huds.color set value "green"
-execute if data entity @s {Dimension:"minecraft:the_end"} run data modify storage eden:temp huds.color set value "green"
-execute if data entity @s {Dimension:"kattersstructures:deep_blue"} run data modify storage eden:temp huds.color set value "green"
+execute if dimension minecraft:overworld run data modify storage eden:temp huds.color set value "green"
+execute if dimension minecraft:the_nether run data modify storage eden:temp huds.color set value "green"
+execute if dimension minecraft:the_end run data modify storage eden:temp huds.color set value "green"
+execute if dimension kattersstructures:deep_blue run data modify storage eden:temp huds.color set value "green"
 
 execute as @s[y_rotation=157.5..-157.5] run data modify storage eden:temp huds.direction set value "North"
 execute as @s[y_rotation=-157.5..-112.5] run data modify storage eden:temp huds.direction set value "North East"
