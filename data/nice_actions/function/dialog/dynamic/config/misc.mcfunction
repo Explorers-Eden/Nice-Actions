@@ -92,6 +92,34 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:single_option",\
+      "key":"new_day_msg",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.nice_actions.new_day_msg",\
+        "fallback":"New Day Message"\
+      },\
+      "options":[\
+        {\
+          "id":"enabled",\
+          "display":{\
+            "translate":"option.nice_actions.enabled",\
+            "fallback":"Enabled",\
+            "color":"green"\
+          }\
+        },\
+        {\
+          "id":"disabled",\
+          "display":{\
+            "translate":"option.nice_actions.disabled",\
+            "fallback":"Disabled",\
+            "color":"red"\
+          },\
+          "initial":$(new_day_msg_disabled_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
       "key":"rtp_type",\
       "width": 256,\
       "label":{\

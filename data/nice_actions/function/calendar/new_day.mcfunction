@@ -1,7 +1,7 @@
 execute unless score $day_had_noon nice_actions.calendar matches 1 run return fail
 
-$title @s actionbar [{"bold":false,"color":"dark_gray","italic":false,"text":"- "},{"bold":false,"color":"gray","italic":false,"text":"$(weekday)"},{"bold":false,"color":"gray","italic":false,"text":": "},{"bold":false,"color":"gray","italic":false,"text":"$(month_name) $(day), $(year)"},{"bold":false,"color":"dark_gray","italic":false,"text":" -"}]
-playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 0.5 1
+$execute unless data storage eden:settings nice_actions{new_day_msg:"disabled"} run title @s actionbar [{"bold":false,"color":"dark_gray","italic":false,"text":"- "},{"bold":false,"color":"gray","italic":false,"text":"$(weekday)"},{"bold":false,"color":"gray","italic":false,"text":": "},{"bold":false,"color":"gray","italic":false,"text":"$(month_name) $(day), $(year)"},{"bold":false,"color":"dark_gray","italic":false,"text":" -"}]
+execute unless data storage eden:settings nice_actions{new_day_msg:"disabled"} run playsound minecraft:ui.cartography_table.take_result master @s ~ ~ ~ 0.5 1
 
 scoreboard players add @a nice_actions.days_lived.counter 1
 

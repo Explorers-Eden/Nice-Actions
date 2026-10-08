@@ -1,8 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Improved server performance of the Event HUD, Coordinates HUD and sleep tracking (player data is no longer read every second)
-- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
+- Added an admin config option to turn off the action bar message shown when a new day starts
 
 ## Fixes:
-- Players sleeping in Straw Beds not counting toward skipping the night
-- Back buttons in menus being labelled "Teleport Back"

@@ -1,7 +1,10 @@
-$data modify storage eden:settings nice_actions merge value {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown),back_cooldown:$(back_cooldown),warmup:$(warmup)}
+$data modify storage eden:settings nice_actions merge value {time_hud_style:$(time_hud_style),rtp_type:$(rtp_type),time_format:$(time_format),rtp_radius:$(rtp_radius),rtp_height_min:$(rtp_height_min),rtp_height_max:$(rtp_height_max),rtp_cooldown:$(rtp_cooldown),tp_home_cooldown:$(tp_home_cooldown),tp_spawn_cooldown:$(tp_spawn_cooldown),back_cooldown:$(back_cooldown),warmup:$(warmup),new_day_msg:$(new_day_msg)}
 
 execute if data storage eden:settings nice_actions{time_format:12} run data modify storage eden:settings nice_actions.time_format_initial set value "false"
 execute if data storage eden:settings nice_actions{time_format:24} run data modify storage eden:settings nice_actions.time_format_initial set value "true"
+
+execute if data storage eden:settings nice_actions{new_day_msg:"enabled"} run data modify storage eden:settings nice_actions.new_day_msg_disabled_initial set value "false"
+execute if data storage eden:settings nice_actions{new_day_msg:"disabled"} run data modify storage eden:settings nice_actions.new_day_msg_disabled_initial set value "true"
 
 execute if data storage eden:settings nice_actions{rtp_type:spawn} run data modify storage eden:settings nice_actions.rtp_type_initial set value "true"
 execute if data storage eden:settings nice_actions{rtp_type:player} run data modify storage eden:settings nice_actions.rtp_type_initial set value "false"
