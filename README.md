@@ -1,70 +1,41 @@
 ## 📖 Description
-**Nice Actions** is a lightweight and user-friendly Minecraft data pack that introduces an in-game menu (opened with the new hotkey - default **G**) for players to perform useful actions like teleporting, sitting, managing their home, toggling HUD elements, and sharing stats - all without typing commands. Admins and operators can easily configure features directly in-game, making setup and management quick and intuitive.
+**Nice Actions** is a lightweight, easy-to-use data pack that adds a **Quick Actions menu**, opened with a new hotkey (default: **G**). From there, players can teleport, sit down, manage their home, toggle HUD elements, share stats and much more, all without typing a single command. Admins and operators can configure every feature directly in game.
 
-<details>
-<summary>Command to open the Config Menu</summary>
+<br>
 
-```
-/function nice_actions
-```
+## 🔎 Content Overview (Wiki)
+Want to know exactly how an action works or what you can configure? It's all in our **[Wiki](https://wiki.explorerseden.eu/en/nice_actions/home)**:
+- 🧭 **HUDs**: a Coordinates HUD with facing direction and light level, and a Time/Date HUD with a custom calendar, weather and sleeping players
+- 🌀 **Teleports**: Random Teleport, Spawn, Home and Teleport Back, with a warm-up countdown and leashed pets and mounts coming along
+- 🪑 **Handy Actions**: sit down, equip any item as a hat, transfer enchantments between items
+- 📍 **Info & Sharing**: send your coordinates, show your last death location, inspect the nearest Villager or Horse, share your stats with nearby players
+- 🏆 **Daily Events**: opt-in challenges with a progress bar and a top 3 leaderboard
+- ⚙️ **Administration**: costs, cooldowns, events and everything else in the config menu (`/function nice_actions`)
 
-</details>
-
-
-## 📋 Features
-### Coordinates HUD
-Displays your current coordinates and facing direction via a sleek bossbar HUD.
-
-### Time/Date HUD
-Shows the in-game time and a fully-featured calendar system with custom days, months, years, and 12/24-hour time options.
-
-### Random Teleport (RTP)
-Instantly teleport to a random location within a configurable radius.
-
-### Home Actions
-Set and teleport to your personal home location with ease.
-
-### Spawn Teleportation
-Allows players to teleport to a defined spawn point - by default, the location where the first player joined after the data pack was installed.
-
-### Sitting
-Sit almost anywhere safely - only when there's solid ground beneath you.
-
-### Send Coordinates
-Instantly share your current location in chat - no more messing with F3.
-
-### Show Death Coordinates
-Quickly check where you last died to find your items again.
-
-### Villager Info
-Get detailed info about the nearest villager, including job, job block location, and inventory.
-
-### Horse Info
-Inspect the nearest horse’s speed, jump height, and health.
-
-### Share Player Stats
-Compare and share gameplay stats with nearby players (within 32 blocks).
-
-### Random Daily Events
-A configurable system of daily challenges (e.g., fishing or combat tasks) with rewards - great for encouraging players to get out of their comfort zones.
-
-### Extensive Admin/OP Config Menu
-Easily adjust cooldowns, EXP Level costs, event settings, and more directly in-game.
-
+<br>
 
 ## 🛠️ Technical Gibberish
-Custom Dialogs/Menus were first introduced in Minecraft 1.21.6 - Therefore a backport to older versions is simply not possible!
+Custom dialogs/menus were introduced in Minecraft 1.21.6, so a backport to older versions isn't possible.
 
-For **PaperMC users**, it is recommended to set the `paper.maxChatCommandInputSize` property to a value between 512 and 1024. More information can be found in the [PaperMC Docs](https://docs.papermc.io/paper/reference/system-properties/#papermaxchatcommandinputsize). Also make sure to have `allow-non-player-entities-on-scoreboards` enabled in your paper configs.
+This data pack also works as the **required** resource pack. Just put the same file into your `resourcepacks` folder and enable it in game.
+
+_(Not needed for the auto-converted mod versions in Single-Player.)_
+
+**PaperMC users:** set the `paper.maxChatCommandInputSize` property to a value between 512 and 1024 (see the [PaperMC Docs](https://docs.papermc.io/paper/reference/system-properties/#papermaxchatcommandinputsize)) and enable `allow-non-player-entities-on-scoreboards` in your Paper config.
+
+<br>
 
 ## 📝 Translations
-Want to play in your own language? You can help us out by contributing on our **[Website]([https://crowdin.com/project/explorers-eden](https://explorerseden.eu/translate/))**!
+Want to play in your own language? Help us out by contributing on our **[Website](https://explorerseden.eu/translate/)**!
+
+<br>
 
 ## ✍️ Feedback, Questions & Suggestions
-We're here to help! If you happen to have questions, suggestions or just encountered a bug, then feel free to hop on our discord server to ask for help in our **Data Pack Section**. [Click to join the server](https://discord.gg/f2pMggfgVv)
+We're here to help! If you have questions or suggestions, or you've run into a bug, hop on our Discord server and ask in the **Data Pack Section**. **[Click to join the server](https://discord.gg/f2pMggfgVv)**
 
+<br>
 
 ## 🎮 Explorer's Eden SMP
-Join **[A Realm Recrafted](https://modrinth.com/server/a-realm-recrafted)**, our Minecraft SMP! Enjoy a world featuring all of our (actively maintained) data packs, as well as some exclusive ones. It’s completely free without any microtransactions. Come build, explore, and craft with us today!
+Join **[A Realm Recrafted](https://modrinth.com/server/a-realm-recrafted)**, our Minecraft SMP! Enjoy a world featuring all of our actively maintained data packs, plus some exclusive ones. It's completely free, with no microtransactions. Come build, explore and craft with us today!
 
-<a href="https://modrinth.com/server/a-realm-recrafted"  target="_blank"><img src="https://explorerseden.eu/images/ee_banner_new.png" alt="Explorer's Eden" style="width:100%;height:100%;"></a>
+<a href="https://modrinth.com/server/a-realm-recrafted" target="_blank"><img src="https://explorerseden.eu/images/ee_banner_new.png" alt="Explorer's Eden" style="width:100%;height:100%;"></a>
