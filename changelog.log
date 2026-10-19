@@ -1,5 +1,6 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Added an admin config option to turn off the action bar message shown when a new day starts
+- The coordinates HUD reads the position from a marker instead of the player's full data (which includes their whole inventory), much lighter on the server
 
 ## Fixes:
+- The glowing highlight of a villager's job site block (villager info) used the block format of older versions and stayed empty on 26.3

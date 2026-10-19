@@ -3,7 +3,8 @@ execute store result storage eden:temp huds.uuid_1 int 1 run scoreboard players 
 execute store result storage eden:temp huds.uuid_2 int 1 run scoreboard players get @s nice_actions.uuid.2
 execute store result storage eden:temp huds.uuid_3 int 1 run scoreboard players get @s nice_actions.uuid.3
 
-data modify storage eden:temp huds.pos set from entity @s Pos
+# The position from a marker at the player: reading it from the player itself turns their whole inventory into NBT
+execute summon minecraft:marker run function nice_actions:coords_hud/update/display/read_pos
 execute store result storage eden:temp huds.posx int 1 run data get storage eden:temp huds.pos[0]
 execute store result storage eden:temp huds.posy int 1 run data get storage eden:temp huds.pos[1]
 execute store result storage eden:temp huds.posz int 1 run data get storage eden:temp huds.pos[2]
