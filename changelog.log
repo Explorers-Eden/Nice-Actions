@@ -1,6 +1,6 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- The coordinates HUD reads the position from a marker instead of the player's full data (which includes their whole inventory), much lighter on the server
+- Quick Actions menu grid got extended to 3 columns
+- Quick Action buttons now have Icon prefixes
 
 ## Fixes:
-- The glowing highlight of a villager's job site block (villager info) used the block format of older versions and stayed empty on 26.3

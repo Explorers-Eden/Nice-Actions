@@ -164,4 +164,4 @@ tag @a remove nice_actions.warmup.done
 function nice_actions:start
 
 ##set data pack version
-data modify storage eden:datapack nice_actions.version set value "3.0"
+data modify storage eden:datapack nice_actions.version set value "3.2"
